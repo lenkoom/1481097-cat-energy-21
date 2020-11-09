@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Елена Молоткова](https://up.htmlacademy.ru/adaptive/21/user/1481097).
-* Наставник: `Неизвестно`.
+* Наставник: [Арсений Матыцин](https://htmlacademy.ru/profile/id225539)
 
 ---
 
