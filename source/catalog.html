@@ -2,6 +2,7 @@
 <html lang="ru" class="page">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Cat Energy</title>
   </head>
   <body class="body">
@@ -9,11 +10,11 @@
       <!--НАВИГАЦИЯ-->
       <div class="header__title" >
         <a class="header__logo-image">
-        <img src="https://via.placeholder.com/150x150" alt="Логотип интернет-магазина Cat Energy">
+          <img src="https://via.placeholder.com/150x150" width="189" height="38" alt="Логотип интернет-магазина Cat Energy">
         </a>
-        <a class="header__menu-button">
-        <img src="https://via.placeholder.com/150x150" alt="Menu">
-        </a>
+        <button class="header__menu-button">
+          <img src="https://via.placeholder.com/150x150" width="24" height="16" alt="Menu">
+        </button>
       </div>
       <nav class="header__navigation navigation">
         <ul class="navigation__menu">
@@ -31,7 +32,7 @@
           <li class="product__item">
             <div class="product__card">
               <p class="product__image">
-                <img src="https://via.placeholder.com/150x150" alt="Cat Energy PRO 500 г">
+                <img src="https://via.placeholder.com/150x150" width="140" height="112" alt="Cat Energy PRO 500 г.">
               </p>
               <div class="product__description">
                 <p class="product__topic">Cat Energy<br>PRO 500 г</p>
@@ -56,7 +57,7 @@
           <li class="product__item">
             <div class="product__card">
               <p class="product__image">
-                <img src="https://via.placeholder.com/150x150" alt="Cat Energy PRO 1000 г">
+                <img src="https://via.placeholder.com/150x150" width="140" height="112" alt="Cat Energy PRO 1000 г.">
               </p>
               <div class="product__description">
                 <p class="product__topic">Cat Energy<br>PRO 1000 г</p>
@@ -81,7 +82,7 @@
           <li class="product__item">
             <div class="product__card">
               <p class="product__image">
-                <img src="https://via.placeholder.com/150x150" alt="Cat Energy PRO 500 г">
+                <img src="https://via.placeholder.com/150x150" width="140" height="112" alt="Cat Energy PRO 500 г.">
               </p>
               <div class="product__description">
                 <p class="product__topic">Cat Energy<br>PRO 500 г</p>
@@ -106,7 +107,7 @@
           <li class="product__item">
             <div class="product__card">
               <p class="product__image">
-                <img src="https://via.placeholder.com/150x150" alt="Cat Energy PRO 1000 г">
+                <img src="https://via.placeholder.com/150x150" width="140" height="112" alt="Cat Energy PRO 1000 г.">
               </p>
               <div class="product__description">
                 <p class="product__topic">Cat Energy<br>PRO 1000 г</p>
@@ -131,7 +132,7 @@
           <li class="product__item">
             <div class="product__card">
               <p class="product__image">
-                <img src="https://via.placeholder.com/150x150" alt="Cat Energy SLIM 500 г">
+                <img src="https://via.placeholder.com/150x150" width="140" height="112" alt="Cat Energy SLIM 500 г.">
               </p>
               <div class="product__description">
                 <p class="product__topic">Cat Energy<br>SLIM 500 г</p>
@@ -156,7 +157,7 @@
           <li class="product__item">
             <div class="product__card">
               <p class="product__image">
-                <img src="https://via.placeholder.com/150x150" alt="Cat Energy SLIM 1000 г">
+                <img src="https://via.placeholder.com/150x150" width="140" height="112" alt="Cat Energy SLIM 1000 г.">
               </p>
               <div class="product__description">
                 <p class="product__topic">Cat Energy<br>SLIM 1000 г</p>
@@ -181,7 +182,7 @@
           <li class="product__item">
             <div class="product__card">
               <p class="product__image">
-                <img src="https://via.placeholder.com/150x150" alt="Cat Energy SLIM 500 г">
+                <img src="https://via.placeholder.com/150x150" width="140" height="112" alt="Cat Energy SLIM 500 г.">
               </p>
               <div class="product__description">
                 <p class="product__topic">Cat Energy<br>SLIM 500 г</p>
@@ -206,45 +207,45 @@
         </ul>
         <!--Показать еще-->
         <div class="products__more">
-          <a href="#" class="products__show-more">
-          <img src="https://via.placeholder.com/150x150" alt="Показать больше товаров">
-          </a>
+          <img src="https://via.placeholder.com/150x150" width="30" height="30" alt="Показать больше товаров">
           <p class="products__topic">Показать еще 100500 товаров</p>
           <p class="products__slogan">На самом деле вкусов гораздо больше!</p>
-          <a href="#" class="products__show-all">Показать все</a>
+          <button value="#" class="products__show-all">Показать все</button>
         </div>
       </section>
       <section class="additional">
         <h3 class="additional__topic">Дополнительные товары</h3>
         <ul class="additional__list">
-          <li class="additional__item add">
-            <p class="add__topic">Сахарохаменитель</p>
-            <span class="add__weight">1 упаковка(100 г)</span><span class="add__price">200 Р.</span>
-            <a href="#" class="add__order">Заказать</a>
+          <li class="additional__item product-small-card">
+            <p class="product-small-card__topic">Сахарохаменитель</p>
+            <span class="product-small-card__weight">1 упаковка(100 г)</span><span class="add__price">200 Р.</span>
+            <button value="#" class="product-small-card__order">Заказать</button>
           </li>
-          <li class="additional__item add">
-            <p class="add__topic">Питьевая вода</p>
-            <span class="add__weight">5 литров</span><span class="add__price">50 Р.</span>
-            <a href="#" class="add__order">Заказать</a>
+          <li class="additional__item product-small-card">
+            <p class="product-small-card__topic">Питьевая вода</p>
+            <span class="product-small-card__weight">5 литров</span><span class="add__price">50 Р.</span>
+            <a href="#" class="product-small-card__order">Заказать</a>
           </li>
-          <li class="additional__item add">
-            <p class="add__topic">Молоко</p>
-            <span class="add__weight">1 литр</span><span class="add__price">100 Р.</span>
-            <a href="#" class="add__order">Заказать</a>
+          <li class="additional__item product-small-card">
+            <p class="product-small-card__topic">Молоко</p>
+            <span class="product-small-card__weight">1 литр</span><span class="add__price">100 Р.</span>
+            <button value="#" class="product-small-card__order">Заказать</button>
           </li>
-          <li class="additional__item add">
-            <p class="add__topic">Витамины</p>
-            <span class="add__weight">1 упаковка(30 г)</span><span class="add__price">300 Р.</span>
-            <a href="#" class="add__order">Заказать</a>
+          <li class="additional__item product-small-card">
+            <p class="product-small-card__topic">Витамины</p>
+            <span class="product-small-card__weight">1 упаковка(30 г)</span><span class="add__price">300 Р.</span>
+            <button value="#" class="product-small-card__order">Заказать</button>
+          </li>
+          <li>
+            <div class="gift">
+              <p class="gift__image">
+                <img src="https://via.placeholder.com/150x150" width="78" height="80" alt="Gift">
+              </p>
+              <p class="gift__description">Закажите все и получите чехол для кота в подарок!</p>
+            </div>
           </li>
         </ul>
       </section>
-      <div class="gift">
-        <p class="gift__image">
-          <img src="https://via.placeholder.com/150x150" alt="Gift">
-        </p>
-        <p class="gift__description">Закажите все и получите чехол для кота в подарок!</p>
-      </div>
     </main>
     <footer class="footer">
       <div class="footer__contact">
@@ -256,40 +257,37 @@
         <!--КАРТА-->
         <div class="footer__map">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426" width="320" height="362" allowfullscreen title="Офис интернет-магазина Cat energy по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></iframe>
-          <div class="footer__map-image">
-            <img src="https://via.placeholder.com/150x150" alt="Карта с местоположением интернет-магазина Cat energy">
-          </div>
         </div>
       </div>
       <!--В СОЦИАЛЬНЫХ СЕТЯХ-->
       <div class="footer__bottom">
         <a class="footer__logo">
-        <img src="https://via.placeholder.com/150x150" alt="Cat Energy">
+          <img src="https://via.placeholder.com/150x150" width="128" height="24" alt="Cat Energy">
         </a>
         <div class="social social--footer">
           <ul class="social__list">
             <li class="social__items">
               <a href="https://vk.com/" class="social__link social__link--vk">
-              <img src="https://via.placeholder.com/150x150" alt="Cat energy вконтакте">
+                <img src="https://via.placeholder.com/150x150" width="22" height="16" alt="Cat energy вконтакте">
               </a>
             </li>
             <li class="social__items">
               <a href="https://instagram.com" class="social__link social__link--inst">
-              <img src="https://via.placeholder.com/150x150" alt="Cat energy в Instagram">
+                <img src="https://via.placeholder.com/150x150" width="16" height="16" alt="Cat energy в Instagram">
               </a>
             </li>
             <li class="social__items">
               <a href="https://facebook.com" class="social__link social__link--fb">
-              <img src="https://via.placeholder.com/150x150" alt="Cat energy на Facebook">
+                <img src="https://via.placeholder.com/150x150" width="13" height="16" alt="Cat energy на Facebook">
               </a>
             </li>
           </ul>
         </div>
         <!--АКАДЕМИЯ-->
-        <div class="footer__copyright">
-          <p class="footer__copyright-text">HTML Academy</p>
-          <p class="footer__copyright-image">
-            <img src="https://via.placeholder.com/150x150" alt="Логотип htmlacademy">
+        <div class="footer__developers">
+          <p class="footer__developers-text">HTML Academy</p>
+          <p class="footer__developers-image">
+            <img src="https://via.placeholder.com/150x150" width="27" height="34" alt="Логотип htmlacademy">
           </p>
         </div>
       </div>
