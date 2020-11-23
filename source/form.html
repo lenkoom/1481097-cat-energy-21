@@ -8,13 +8,19 @@
   <body class="body">
     <header class="header">
       <!--НАВИГАЦИЯ-->
-      <div class="header__title" >
-        <a class="header__logo-image">
+      <div class="header__logo-image">
+        <a href="index.html">
           <img src="https://via.placeholder.com/150x150" width="189" height="38" alt="Логотип интернет-магазина Cat Energy">
         </a>
-        <button class="header__menu-button">
-          <img src="https://via.placeholder.com/150x150" width="24" height="16" alt="Menu">
-        </button>
+      </div>
+      <div class="header__logo">
+        <a href="index.html">
+          <h1><span>CAT </span>ENERGY</h1>
+        </a>
+      </div>
+      <button class="header__menu-button">
+        <img src="https://via.placeholder.com/150x150" width="24" height="16" alt="Menu">
+      </button>
       </div>
       <nav class="header__navigation navigation">
         <ul class="navigation__menu">
@@ -71,17 +77,17 @@
           </ul>
         </fieldset>
         <fieldset class="programms-form__fieldset programms-form__fieldset--contacts">
-          <ul class="programms__list fields-list__contacts">
+          <ul class="programms__list fields-list">
             <legend class="programms-form__fieldset-legend">Контактные данные (владельца кота)</legend>
-            <li>
-              <label class="field__label"  for="user-email">e-mail:*</label>
+            <li class="field">
+              <label class="field__label"  for="user-email">E-mail:*</label>
               <input class="field__input" type="email" name="contact__email" required id="user-email" placeholder="kuklachev@gmail.com">
-            </li>
-            <li>
-              <label class="field__label" for="user-tel" >Телефон:*</label>
+            </li class="field">
+            <li class="field">
+              <label class="field__label" for="user-tel">Телефон:*</label>
               <input class="field__input" type="tel" name="contact__tel" required id="user-tel" placeholder="8 (960) 900-60-90">
             </li>
-            <li>
+            <li class="field">
               <label class="field__label">Текст письма:
               <textarea placeholder="Расскажите обо всех повадках кота" class="field__input"></textarea>
               </label>
@@ -90,7 +96,7 @@
         </fieldset>
         <fieldset class="programms-form__fieldset programms-form__fieldset--add">
           <legend class="programms-form__fieldset-legend">Дополнительно</legend>
-          <ul class="programms__list fields-list__add">
+          <ul class="programms__list fields-list">
             <li>
               <label class="field-checkbox">Сахарозаменитель
               <input class="field-checkbox__input" type="checkbox" name="sugar" checked>
