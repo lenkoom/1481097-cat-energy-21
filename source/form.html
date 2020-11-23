@@ -58,20 +58,20 @@
           <ul class="programms__list fields-list">
             <li>
               <label class="field-radio">
-              <input type="radio" name="programms-direction" value="fit" class="field-radio__input" checked>
-              <span class="field-radio__label">Похудение</span>
+                <input type="radio" name="programms-direction" value="fit" class="field-radio__input" checked>
+                <span class="field-radio__label">Похудение</span>
               </label>
             </li>
             <li>
               <label class="field-radio">
-              <input type="radio" name="programms-direction" value="fat" class="field-radio__input">
-              <span class="field-radio__label">Набор массы</span>
+                <input type="radio" name="programms-direction" value="fat" class="field-radio__input">
+                <span class="field-radio__label">Набор массы</span>
               </label>
             </li>
             <li>
               <label class="field-radio">
-              <input type="radio" name="programms-direction" value="help" class="field-radio__input">
-              <span class="field-radio__label">Не знаю (нужен ваш совет)</span>
+                <input type="radio" name="programms-direction" value="help" class="field-radio__input">
+                <span class="field-radio__label">Не знаю (нужен ваш совет)</span>
               </label>
             </li>
           </ul>
@@ -80,7 +80,7 @@
           <legend class="programms-form__fieldset-legend">Контактные данные (владельца кота)</legend>
           <ul class="programms__list fields-list">
             <li class="field">
-              <label class="field__label"  for="user-email">E-mail:*</label>
+              <label class="field__label" for="user-email">E-mail:*</label>
               <input class="field__input" type="email" name="contact__email" required id="user-email" placeholder="kuklachev@gmail.com">
             </li class="field">
             <li class="field">
@@ -88,9 +88,8 @@
               <input class="field__input" type="tel" name="contact__tel" required id="user-tel" placeholder="8 (960) 900-60-90">
             </li>
             <li class="field">
-              <label class="field__label">Текст письма:
-              <textarea placeholder="Расскажите обо всех повадках кота" class="field__input"></textarea>
-              </label>
+              <label class="field__label" for="about">Текст письма:</label>
+              <textarea placeholder="Расскажите обо всех повадках кота" class="field__input" id="about"></textarea>
             </li>
           </ul>
         </fieldset>
@@ -98,30 +97,34 @@
           <legend class="programms-form__fieldset-legend">Дополнительно</legend>
           <ul class="programms__list fields-list">
             <li>
-              <label class="field-checkbox">Сахарозаменитель
-              <input class="field-checkbox__input" type="checkbox" name="sugar" checked>
+              <label class="field-checkbox">
+                <input class="field-checkbox__input" type="checkbox" name="sugar" checked>
+                <span class="field-checkbox__label">Сахарозаменитель</span>
               </label>
             </li>
             <li>
-              <label class="field-checkbox">Питьевая вода
-              <input class="field-checkbox__input" type="checkbox" name="water">
+              <label class="field-checkbox">
+                <input class="field-checkbox__input" type="checkbox" name="water">
+                <span class="field-checkbox__label">Питьевая вода</span>
               </label>
             </li>
             <li>
-              <label class="field-checkbox">Молоко
-              <input class="field-checkbox__input" type="checkbox" name="milk" checked>
+              <label class="field-checkbox">
+                <input class="field-checkbox__input" type="checkbox" name="milk" checked>
+                <span class="field-checkbox__label">Молоко</span>
               </label>
             </li>
             <li>
-              <label class="field-checkbox">Витамины
-              <input class="field-checkbox__input" type="checkbox" name="vitamins">
+              <label class="field-checkbox">
+                <input class="field-checkbox__input" type="checkbox" name="vitamins">
+                <span class="field-checkbox__label">Витамины</span>
               </label>
             </li>
           </ul>
         </fieldset>
         <button type="submit" class="programms__button">Отправить заявку</button>
       </form>
-      <p class="programms__glose">* — Обязательные поля</p>
+      <p class="programms__glose">*&nbsp;&mdash; Обязательные поля</p>
     </main>
     <footer class="footer">
       <div class="footer__contact">
