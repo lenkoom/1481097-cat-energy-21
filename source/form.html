@@ -8,20 +8,15 @@
   <body class="body">
     <header class="header">
       <!--НАВИГАЦИЯ-->
-      <div class="header__logo-image">
-        <a href="index.html">
-          <img src="https://via.placeholder.com/150x150" width="189" height="38" alt="Логотип интернет-магазина Cat Energy">
-        </a>
-      </div>
-      <div class="header__logo">
-        <a href="index.html">
-          <h1><span>CAT </span>ENERGY</h1>
-        </a>
-      </div>
+      <a href="index.html" class="header__logo-image">
+        <img src="https://via.placeholder.com/150x150" width="189" height="38" alt="Логотип интернет-магазина Cat Energy">
+      </a>
+      <a href="index.html" class="header__logo">
+        <img src="https://via.placeholder.com/150x150" width="189" height="38" alt="Логотип текстовая часть интернет-магазина Cat Energy">
+      </a>
       <button class="header__menu-button">
         <img src="https://via.placeholder.com/150x150" width="24" height="16" alt="Menu">
       </button>
-      </div>
       <nav class="header__navigation navigation">
         <ul class="navigation__menu">
           <li class="navigation__item"><a class="navigation__link" href="index.html">Главная</a></li>
@@ -82,7 +77,7 @@
             <li class="field">
               <label class="field__label" for="user-email">E-mail:*</label>
               <input class="field__input" type="email" name="contact__email" required id="user-email" placeholder="kuklachev@gmail.com">
-            </li class="field">
+            </li>
             <li class="field">
               <label class="field__label" for="user-tel">Телефон:*</label>
               <input class="field__input" type="tel" name="contact__tel" required id="user-tel" placeholder="8 (960) 900-60-90">
@@ -143,32 +138,30 @@
         <a class="footer__logo">
           <img src="https://via.placeholder.com/150x150" width="128" height="24" alt="Cat Energy">
         </a>
-        <div class="social social--footer">
-          <ul class="social__list">
-            <li class="social__items">
-              <a href="https://vk.com/" class="social__link">
+        <ul class="socials-list">
+          <li class="socials-list__items">
+            <a href="https://vk.com/" class="socials-list__link">
               <span class="visually-hidden">Cat energy вконтакте</span>
-              </a>
-            </li>
-            <li class="social__items">
-              <a href="https://facebook.com" class="social__link">
+            </a>
+          </li>
+          <li class="socials-list__items">
+            <a href="https://facebook.com" class="socials-list__link">
               <span class="visually-hidden">Cat energy на Facebook</span>
-              </a>
-            </li>
-            <li class="social__items">
-              <a href="https://instagram.com" class="social__link">
+            </a>
+          </li>
+          <li class="socials-list__items">
+            <a href="https://instagram.com" class="socials-list__link">
               <span class="visually-hidden">Cat energy в Instagram</span>
-              </a>
-            </li>
-          </ul>
-        </div>
+            </a>
+          </li>
+        </ul>
         <!--АКАДЕМИЯ-->
-        <div class="footer__developers ">
-          <p class="footer__developers-text">HTML Academy</p>
-          <p class="footer__developers-image">
+        <a href="https://htmlacademy.ru/" target="_blank" class="footer__developers">
+          <span class="footer__developers-text">HTML Academy</span>
+          <span class="footer__developers-image">
             <img src="https://via.placeholder.com/150x150" width="27" height="34" alt="Логотип htmlacademy">
-          </p>
-        </div>
+          </span>
+        </a>
       </div>
     </footer>
     <script src="js/form-min.js"></script>
