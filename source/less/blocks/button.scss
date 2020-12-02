@@ -1,0 +1,8 @@
+.button {
+  background-color: $button-background-color;
+  color: $button-color;
+
+  &:hover {
+    background-color: $button-background-color--hover;
+  }
+}
