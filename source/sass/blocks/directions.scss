@@ -1,0 +1,75 @@
+.directions {
+  //Nothing
+}
+
+.directions__list {
+	list-style-type: none;
+	margin: 0;
+}
+
+.directions__item {
+	background-color: $color-basic-grey;
+	padding: 20px;
+	padding-top: 32px;
+	margin-left: -20px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+}
+
+.direction-card {
+  //Nothing
+}
+
+.direction-card__title {
+	font-family: $heading-font;
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 37px;
+	text-transform:uppercase;
+	position: relative;
+	margin: 0;
+	margin-left: 70px;
+}
+
+.direction-card__title::before {
+  position: absolute;
+  display: block;
+  width: 20px;
+  height: 10px;
+  top: -20%;
+}
+
+.directions__text {
+  font-family: "Arial", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--special_dark-grey);
+  border-bottom: 1px solid #E6E6E6;
+  padding: 18px 0px 20px;
+}
+
+.directions__btn {
+  text-decoration:none;
+  font-family: oswald, "Arial", sans-serif;
+  font-weight: 400;
+  color: $color-black;
+  font-size: 16px;
+  line-height: 16px;
+  display: inline-block;
+  text-transform: uppercase;
+  display: block;
+  position: relative;
+  padding: 5px 0px 3px;
+  margin: 0;
+}
+
+.directions__btn::after {
+  content: url(../img/right.svg);
+  display: block;
+  width: 25px;
+  height: 30px;
+  position: absolute;
+  left: 42%;
+  top: 7%;
+}

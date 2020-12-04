@@ -1,11 +1,22 @@
-@import "header.less";
-@import "about.less";
-@import "directions.less";
-@import "advantages.less";
-@import "example.less";
-@import "slider.less";
-@import "footer.less";
-@import "products.less";
-@import "additional.less";
-@import "gift.less";
-@import "programms.less";
+@import "config.scss";
+
+// Globals
+@import "reset.scss";
+@import "visually-hidden.scss";
+@import "fonts.scss";
+
+// Blocks
+@import "./blocks/page.scss";
+@import "./blocks/button.scss";
+@import "./blocks/header.scss";
+@import "./blocks/navigation.scss";
+@import "./blocks/about.scss";
+@import "./blocks/directions.scss";
+// @import "./blocks/advantages.scss";
+// @import "./blocks/example.scss";
+// @import "./blocks/slider.scss";
+// @import "./blocks/footer.scss";
+// @import "./blocks/products.scss";
+// @import "./blocks/additional.scss";
+// @import "./blocks/gift.scss";
+// @import "./blocks/programms.scss";

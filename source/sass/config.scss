@@ -2,20 +2,30 @@
 $color-black: black;
 $color-blue: blue;
 $color-basic-green: #68B738;
+$color-basic-green-2: #5EAA2F;
+$color-basic-grey: #F2F2F2;
+$color-basic-grey-2: #EBEBEB;
+$color-special-grey: #CDCDCD;
+$color-special-grey-2: #666666;
+$color-special-dark-grey: #444444;
+$color-special-dark-grey-2: #222222;
+$color-status-error: #FF8282;
 
 // Shadows system
-$shadow-normal: 0 1px 3px rgba(black, .16);
+$shadow-normal: 0 1px 3px rgba(black, 0.16);
+$shadow-hover: 0 2px 4px rgba(black, 0.19);
+$shadow-normal: 0 3px 5px rgba(black, 0.20);
 
 // Fonts system
-$main-font: 'Oswald', Arial, sans-serif;
+$main-font: "Arial", sans-serif;
 $main-font-size: 14px;
 $main-lineheight: 18px;
-$heading-font: Arial;
-
+$heading-font: "Oswald", sans-serif;
 
 // Button
 $button-background-color: $color-basic-green;
 $button-color: white;
-$button-background-color--hover: rgba($color-basic-green, .8);
+$button-background-color--hover: $color-basic-green-2;
 
-//
+// Navigation
+$navigation-border-color: #E6E6E6;
