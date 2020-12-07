@@ -1,0 +1,22 @@
+:root {
+  --basic_green: $color-basic-green;
+  --basic_green-2: $color-basic-green-2;
+  --basic_grey: $color-basic-grey;
+  --basic_grey-2: $color-basic-grey-2;
+  --special_grey: $color-special-grey;
+  --special_grey-2: $color-special-grey-2;
+  --special_dark-grey: $color-special-dark-grey;
+  --special_dark-grey-2: $color-special-dark-grey-2;
+  --status_error: $color-status-error;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
