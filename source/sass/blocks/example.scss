@@ -1,0 +1,63 @@
+.example {
+  background-color: $example-background-color;
+  margin-bottom: 0;
+}
+
+.example__title {
+  font-family: $heading-font;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  margin-left: 30px;
+}
+
+.example__description {
+  font-family: $main-font;
+  font-weight: 500;
+  font-size: $main-font-size;
+  line-height: 18px;
+  color: $color-special-dark-grey;
+  margin-left: 30px;
+  margin-right: 21px;
+}
+
+.example__property-value {
+  font-family: $heading-font;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 5px;
+}
+
+.example__list {
+  display: grid;
+  margin-left: 30px;
+  grid-template-columns: 1fr 1fr;
+  margin-right: 21px;
+}
+
+.example__property-name {
+  text-align: center;
+  font-family: $main-font;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 12px;
+  color: $color-special-dark-grey;
+}
+
+.example__property {
+  border-width: 1px;
+  border-color: $color-special-grey;
+  border-radius: 5px;
+}
+
+.example__property-benefit {
+  font-family: $heading-font;
+  font-weight: 500;
+  font-size: $main-font-size;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}

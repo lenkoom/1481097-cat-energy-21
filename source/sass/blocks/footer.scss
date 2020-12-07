@@ -1,0 +1,69 @@
+.footer__contact {
+  //Nothing
+}
+
+.footer__card {
+  display: flex;
+}
+
+.footer__invitation {
+  font-family: $heading-font;
+  font-weight: 500;
+  font-size: 16px;
+  color: $footer-invitation-color;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.footer__address-street,
+.footer__address-city {
+  font-family: $main-font;
+  font-weight: 400;
+  font-size: $main-font-size;
+  color: $color-special-grey;
+  line-height: 20px;
+}
+
+.footer__map iframe {
+  border: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+
+.footer__map {
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 8px;
+}
+
+.footer__bottom {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__logo {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
+}
+
+.footer__developers {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__developers-text {
+  font-family: $main-font;
+  font-weight: 400;
+  font-size: 16px;
+  color: $color-special-dark-grey;
+  line-height: 18px;
+}
+
+.footer__developers-image {
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+}

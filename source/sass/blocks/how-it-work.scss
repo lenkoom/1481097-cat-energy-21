@@ -1,0 +1,57 @@
+.how-it-work {
+  //Nothing
+}
+
+.how-it-work__topic {
+  font-family: $heading-font;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  margin-left: 30px;
+}
+
+.how-it-work__list {
+  list-style-type: none;
+  margin-left: 0;
+}
+
+.how-it-work__item {
+  font-family: $main-font;
+  font-weight: 500;
+  font-size: $main-font-size;
+  line-height: 18px;
+  position: relative;
+  margin-left: 60px;
+  margin-bottom: 30px;
+}
+
+.how-it-work__image {
+  //Nothing
+}
+
+.how-it-work__text {
+  color: $color-special-dark-grey;
+}
+
+.how-it-work__text::before {
+  position: absolute;
+  display: block;
+  left: -40%;
+  top: -10%;
+}
+
+.how-it-work__text:nth-child(1)::before {
+  content: url("../img/leaf.svg");
+}
+
+.how-it-work__text:nth-child(2)::before {
+  content: url("../img/tube.svg");
+}
+
+.how-it-work__text:nth-child(3)::before {
+  content: url("../img/tableware.svg");
+}
+
+.how-it-work__text:nth-child(4)::before {
+  content: url("../img/clock.svg");
+}

@@ -1,20 +1,21 @@
 // Color system
-$color-black: black;
-$color-blue: blue;
-$color-basic-green: #68B738;
-$color-basic-green-2: #5EAA2F;
-$color-basic-grey: #F2F2F2;
-$color-basic-grey-2: #EBEBEB;
-$color-special-grey: #CDCDCD;
-$color-special-grey-2: #666666;
-$color-special-dark-grey: #444444;
+$color-black:               black;
+$color-blue:                blue;
+$color-basic-green:         #68b738;
+$color-basic-green-2:       #5eaa2f;
+$color-basic-grey:          #f2f2f2;
+$color-basic-grey-2:        #ebebeb;
+$color-basic-grey-light:    #e6e6e6;
+$color-special-grey:        #cdcdcd;
+$color-special-grey-2:      #666666;
+$color-special-dark-grey:   #444444;
 $color-special-dark-grey-2: #222222;
-$color-status-error: #FF8282;
+$color-status-error:        #ff8282;
 
 // Shadows system
 $shadow-normal: 0 1px 3px rgba(black, 0.16);
 $shadow-hover: 0 2px 4px rgba(black, 0.19);
-$shadow-normal: 0 3px 5px rgba(black, 0.20);
+$shadow-normal: 0 3px 5px rgba(black, 0.2);
 
 // Fonts system
 $main-font: "Arial", sans-serif;
@@ -28,4 +29,19 @@ $button-color: white;
 $button-background-color--hover: $color-basic-green-2;
 
 // Navigation
-$navigation-border-color: #E6E6E6;
+$navigation-border-color: $color-basic-grey-light;
+
+// Example
+$example-background-color: #eaeaea;
+
+// Footer
+$footer-invitation-color: #111111;
+
+// Direction
+$direction-card-text-color: $color-basic-grey-light;
+
+// Socials-list
+$socials-list-border-color: $color-basic-grey-light;
+
+// Slider
+$slider-border-color: $color-special-grey;
