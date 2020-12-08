@@ -25,8 +25,11 @@ $heading-font: "Oswald", sans-serif;
 
 // Button
 $button-background-color: $color-basic-green;
+$button-background-color: $color-basic-green;
 $button-color: white;
 $button-background-color--hover: $color-basic-green-2;
+$button-font: $heading-font;
+$button-font-size: 20px;
 
 // Navigation
 $navigation-border-color: $color-basic-grey-light;
@@ -45,3 +48,14 @@ $socials-list-border-color: $color-basic-grey-light;
 
 // Slider
 $slider-border-color: $color-special-grey;
+
+// Form
+$main-form-font-size: 16px;
+$title-form-font-size: 24px;
+$header-form-font-size: 36px;
+
+// Field
+$field-label-font: $heading-font;
+$field-label-color: $color-special-dark-grey;
+$field-border-color: $color-special-grey;
+$field-symbol-color: $color-basic-green;
