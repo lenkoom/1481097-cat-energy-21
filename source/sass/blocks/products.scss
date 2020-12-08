@@ -1,0 +1,16 @@
+.products {
+  //Nothing
+}
+
+.products__header {
+  font-family: $header-catalog-font;
+  font-size: $header-catalog-font-size;
+  color: $color-black;
+  font-weight: 400;
+}
+
+.products__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}

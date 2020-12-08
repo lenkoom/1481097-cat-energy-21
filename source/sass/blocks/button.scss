@@ -12,4 +12,14 @@
   &:hover {
     background-color: $button-background-color--hover;
   }
+
+  &--light-gray {
+    background-color: $button-background-color-gray;
+    color: $button-color-gray;
+  }
+
+  &--light-gray:hover {
+    background-color: $button-background-hover-color-gray;
+    color: $button-color-gray;
+  }
 }

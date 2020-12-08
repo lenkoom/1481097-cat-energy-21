@@ -25,8 +25,10 @@ $heading-font: "Oswald", sans-serif;
 
 // Button
 $button-background-color: $color-basic-green;
-$button-background-color: $color-basic-green;
+$button-background-color-gray: $color-basic-grey;
+$button-background-hover-color-gray: $color-basic-grey-2;
 $button-color: white;
+$button-color-gray: $color-special-dark-grey;
 $button-background-color--hover: $color-basic-green-2;
 $button-font: $heading-font;
 $button-font-size: 20px;
@@ -59,3 +61,14 @@ $field-label-font: $heading-font;
 $field-label-color: $color-special-dark-grey;
 $field-border-color: $color-special-grey;
 $field-symbol-color: $color-basic-green;
+
+// Catalog
+$main-catalog-font-size: 12px;
+$title-catalog-font-size: 16px;
+$header-2-catalog-font-size: 24px;
+$header-catalog-font-size: 36px;
+$main-catalog-font: $main-font;
+$title-catalog-font: $heading-font;
+$header-catalog-font: $heading-font;
+$title-catalog-color: $color-special-dark-grey-2;
+$main-catalog-color: $color-special-dark-grey;
