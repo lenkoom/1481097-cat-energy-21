@@ -1,6 +1,13 @@
 .button {
+  display: inline-flex;
   background-color: $button-background-color;
+  font-family: $button-font;
+  font-size: $button-font-size;
   color: $button-color;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: none;
+  padding: 14px 26px;
 
   &:hover {
     background-color: $button-background-color--hover;

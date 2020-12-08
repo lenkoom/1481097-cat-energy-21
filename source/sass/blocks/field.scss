@@ -1,0 +1,16 @@
+.field {
+  list-style-type: none;
+  text-transform: uppercase;
+}
+
+.field__label,
+.field__input {
+  font-family: $field-label-font;
+  font-size: $main-form-font-size;
+  color: $field-label-color;
+  text-transform: uppercase;
+}
+
+.field__icon {
+  //Nothing
+}

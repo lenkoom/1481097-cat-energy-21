@@ -1,0 +1,35 @@
+.programms {
+  //Nothing
+}
+
+.programms__item {
+  font-family: $heading-font;
+  font-size: $header-form-font-size;
+  color: $color-black;
+  text-transform: uppercase;
+}
+
+.programms__description {
+  font-family: $heading-font;
+  font-size: $main-form-font-size;
+  color: $color-black;
+  text-transform: uppercase;
+}
+
+.programms__form {
+  //Nothing
+}
+
+.programms__list {
+  list-style-type: none;
+}
+
+.programms__button {
+  //Nothing
+}
+
+.programms__glose {
+  font-family: $main-font;
+  font-size: 14px;
+  color: $color-black;
+}
