@@ -1,0 +1,38 @@
+.product-card {
+  //Nothing
+}
+
+.product-card__image {
+  //Nothing
+}
+
+.product-card__title {
+  font-family: $title-catalog-font;
+  font-size: $title-catalog-font-size;
+  color: $title-catalog-color;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.product-card__slogan {
+  font-family: $main-catalog-font;
+  font-size: $main-catalog-font-size;
+  color: $main-catalog-color;
+  font-weight: 400;
+}
+
+.product-card__details {
+  font-family: $main-catalog-font;
+  font-size: $main-catalog-font-size;
+  color: $main-catalog-color;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.product-card__order {
+  //Nothing
+}
+
+.products-card__show-all {
+  //Nothing
+}

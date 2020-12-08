@@ -1,0 +1,24 @@
+.product-small-card {
+  //Nothing
+}
+
+.product-small-card__title {
+  font-family: $title-catalog-font;
+  font-size: $title-catalog-font-size;
+  font-weight: 400;
+  color: $title-catalog-color;
+  text-transform: uppercase;
+}
+
+.product-small-card__quantity,
+.product-small-card__price {
+  font-family: $main-catalog-font;
+  font-size: 14px;
+  color: $main-catalog-color;
+}
+
+.product-small-card__order {
+  //Nothing
+}
+
+
