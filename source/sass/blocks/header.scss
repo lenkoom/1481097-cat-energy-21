@@ -1,19 +1,58 @@
 .header {
-  padding: 12px 20px 10px;
+  display: grid;
+  grid-template-columns: 66px 1fr 66px;
+  grid-template-rows: 66px auto;
+  grid-template-areas: "logo-image logo-text nav-toggler" "nav nav nav";
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 60px 114px 1fr;
+    grid-template-rows: 52px;
+    grid-template-areas: "logo-image logo-text nav";
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: calc((100% - 1220px)/2) 70px 132px 1fr calc((100% - 1220px)/2);
+    grid-template-rows: 52px;
+    grid-template-areas: ". logo-image logo-text nav .";
+  }
 }
 
 .header__logo-image {
-  // Nothing
+  grid-area: logo-image;
+  align-self: center;
+  justify-self: center;
+}
+
+.header__logo-image img {
+  width: 280px;
+  height: 270px;
 }
 
 .header__logo {
-  // Nothing
+  grid-area: logo-text;
+  align-self: center;
+  justify-self: center;
+}
+
+.header__logo img {
+  width: 101px;
+  height: 18px;
+}
+.header__menu-button {
+  grid-area: nav-toggler;
 }
 
 .header__menu-button {
-  // Nothing
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.header__menu-button img {
+  width: 18px;
+  height: 18px;
 }
 
 .header__navigation {
-  // Nothing
+  grid-area: nav;
 }

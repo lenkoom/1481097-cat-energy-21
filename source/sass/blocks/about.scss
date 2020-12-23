@@ -1,17 +1,35 @@
 .about {
-  background: url("../img/index-background-mobile.png") no-repeat;
   background-size: 100%;
   font-family: $heading-font;
   font-weight: 400;
   text-align: center;
   color: white;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 302px 135px 40px;
+  grid-template-areas: "header-text" "." "button";
+
+  @media (min-width: $tablet-width) {
+    grid-template-rows: 263px 54px 526px;
+    grid-template-areas: "header-text" "." "button";
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: calc((100% - 1220px)/2) repeat(4, 1fr) calc((100% - 1220px)/2);
+    grid-template-rows: 140px 312px 240px;
+    grid-template-areas:
+    "."
+    ". header-text header-text . . ."
+    ". button button . . .";
+  }
 }
 
 .about__description {
-  // Nothing
+  grid-area: header-text;
 }
 
 .about__title {
+
   font-size: 36px;
   line-height: 36px;
   padding: 25px 35px 25px;
@@ -27,10 +45,22 @@
 }
 
 .about__image {
-  // Nothing
+  width: 33px;
+  height: 37px;
+  grid-column: 1 / -1;
+  grid-row: 3 / span 1;
+
+  @media (min-width: $tablet-width) {
+    grid-row: 2 / span 2;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 3 / span 3;
+}
 }
 
 .about__select {
+  grid-area: button;
   text-decoration: none;
   color: $button-color;
   font-size: $main-font-size;
