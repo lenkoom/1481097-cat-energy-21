@@ -11,7 +11,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: calc((100% - 1220px)/2) 70px 132px 1fr calc((100% - 1220px)/2);
+    grid-template-columns: calc((100% - 1220px) / 2) 70px 132px 1fr calc((100% - 1220px) / 2);
     grid-template-rows: 52px;
     grid-template-areas: ". logo-image logo-text nav .";
   }
@@ -24,8 +24,8 @@
 }
 
 .header__logo-image img {
-  width: 280px;
-  height: 270px;
+  width: 33px;
+  height: 38px;
 }
 
 .header__logo {
@@ -38,11 +38,10 @@
   width: 101px;
   height: 18px;
 }
-.header__menu-button {
-  grid-area: nav-toggler;
-}
 
 .header__menu-button {
+  grid-area: nav-toggler;
+
   @media (min-width: $tablet-width) {
     display: none;
   }

@@ -9,6 +9,16 @@
   text-align: center;
 }
 
+.navigation__item {
+  @media (min-width: $tablet-width) {
+    display: inline;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: inline;
+  }
+}
+
 .navigation__item:nth-child(1) {
   border-top: 1px solid $navigation-border-color;
   border-bottom: 1px solid $navigation-border-color;
@@ -23,7 +33,6 @@
 .navigation__item:nth-child(3) {
   padding: 25px 0 20px;
 }
-
 
 .navigation__link {
   text-decoration: none;

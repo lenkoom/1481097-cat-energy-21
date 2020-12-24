@@ -6,8 +6,8 @@
   color: white;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 302px 135px 40px;
-  grid-template-areas: "header-text" "." "button";
+  grid-template-rows: 167px 135px 138px 40px;
+  grid-template-areas: "header-text" "." "." "button";
 
   @media (min-width: $tablet-width) {
     grid-template-rows: 263px 54px 526px;
@@ -15,12 +15,21 @@
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: calc((100% - 1220px)/2) repeat(4, 1fr) calc((100% - 1220px)/2);
+    grid-template-columns: calc((100% - 1220px) / 2) repeat(4, 1fr) calc((100% - 1220px) / 2);
     grid-template-rows: 140px 312px 240px;
-    grid-template-areas:
-    "."
-    ". header-text header-text . . ."
-    ". button button . . .";
+    grid-template-areas: "." ". header-text header-text . . ." ". button button . . .";
+  }
+}
+
+.about::before {
+  content: "";
+  background-color: #68b738;
+  grid-column: 1 / -1;
+  grid-row: 1 / span 2;
+
+  @media (min-width: $desktop-width) {
+    grid-column: 4 / span 3;
+    grid-row: 1 / span 3;
   }
 }
 
@@ -45,10 +54,8 @@
 }
 
 .about__image {
-  width: 33px;
-  height: 37px;
   grid-column: 1 / -1;
-  grid-row: 3 / span 1;
+  grid-row: 2 / span 2;
 
   @media (min-width: $tablet-width) {
     grid-row: 2 / span 2;
@@ -56,7 +63,7 @@
 
   @media (min-width: $desktop-width) {
     grid-column: 3 / span 3;
-}
+  }
 }
 
 .about__select {
