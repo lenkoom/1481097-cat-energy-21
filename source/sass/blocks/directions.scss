@@ -3,17 +3,26 @@
 }
 
 .directions__list {
+  display: grid;
   list-style-type: none;
   margin: 0;
   padding: 0;
+  grid-gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    grid-gap: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 80px;
+  }
 }
 
 .directions__item {
   background-color: $color-basic-grey;
   padding: 20px;
   padding-top: 32px;
-  margin-right: 20px;
-  margin-bottom: 20px;
 }
 
 .direction-card {

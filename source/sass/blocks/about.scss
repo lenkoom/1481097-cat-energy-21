@@ -40,6 +40,7 @@
 
 .about__description {
   grid-area: header-text;
+  padding: 25px 35px 25px;
 }
 
 .about__title {
@@ -106,9 +107,12 @@
   }
 }
 
+.about__image img {
+  max-height: 100%;
+}
+
 .about__select {
   grid-area: button;
-  align-self: center;
   justify-self: center;
   text-decoration: none;
   color: $button-color;
