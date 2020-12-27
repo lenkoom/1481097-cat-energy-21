@@ -17,7 +17,7 @@
   @media (min-width: $desktop-width) {
     grid-template-columns: calc((100% - 1220px) / 2) repeat(4, 1fr) calc((100% - 1220px) / 2);
     grid-template-rows: 140px 312px 240px;
-    grid-template-areas: "." ". header-text header-text . . ." ". button button . . .";
+    grid-template-areas: ". . . . . ." ". header-text header-text . . ." ". button button . . .";
   }
 }
 
