@@ -6,7 +6,7 @@
   color: white;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 167px 135px 138px 40px;
+  grid-template-rows: 167px 135px 135px 40px;
   grid-template-areas: "header-text" "." "." "button";
 
   @media (min-width: $tablet-width) {
@@ -32,6 +32,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    display: block;
     grid-column: 4 / span 3;
     grid-row: 1 / span 3;
   }
@@ -48,6 +49,7 @@
   line-height: 36px;
   padding: 25px 35px 25px;
   margin: 0;
+
   @media (min-width: $tablet-width) {
     color: black;
     font-size: 60px;
@@ -99,6 +101,8 @@
 
   @media (min-width: $desktop-width) {
     grid-column: 3 / span 3;
+    width: 552px;
+    height: 499px;
   }
 }
 
