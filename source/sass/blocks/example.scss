@@ -9,6 +9,7 @@
   font-size: 36px;
   line-height: 40px;
   margin-left: 30px;
+  padding-top: 27px;
 }
 
 .example__description {
@@ -27,7 +28,6 @@
   font-size: 24px;
   line-height: 24px;
   text-transform: uppercase;
-  text-align: center;
   padding: 5px;
 }
 
@@ -36,6 +36,7 @@
   margin-left: 30px;
   grid-template-columns: 1fr 1fr;
   margin-right: 21px;
+  list-style-type: none;
 }
 
 .example__property-name {

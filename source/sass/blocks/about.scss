@@ -48,7 +48,7 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
-  padding: 25px 35px 25px;
+  padding-bottom: 25px;
   margin: 0;
 
   @media (min-width: $tablet-width) {
@@ -113,17 +113,19 @@
 
 .about__select {
   grid-area: button;
-  justify-self: center;
   text-decoration: none;
   color: $button-color;
-  font-size: $main-font-size;
+  font-size: $main-about-select-font-size;
+  font-family: $main-about-select-font-family;
   line-height: $main-lineheight;
   display: inline-block;
   background-color: $button-background-color;
-  padding: 13px 58px;
+  padding: 18px 50px;
   text-transform: uppercase;
   text-align: center;
-  margin: 0 20px 20px 0;
-  width: 280px;
-  height: 40px;
+  justify-self: start;
+
+  @media (min-width: $desktop-width) {
+    line-height: $main-about-select-lineheight;
+  }
 }

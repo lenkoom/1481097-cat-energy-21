@@ -8,6 +8,9 @@
   margin: 0;
   padding: 0;
   grid-gap: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 22px;
 
   @media (min-width: $tablet-width) {
     grid-gap: 30px;
@@ -30,7 +33,7 @@
 }
 
 .direction-card__icon {
-  //Nothing
+  position: absolute;
 }
 
 .direction-card__title {
