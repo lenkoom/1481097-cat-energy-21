@@ -6,7 +6,7 @@
   color: white;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 167px 135px 135px 40px;
+  grid-template-rows: 167px 135px 135px auto;
   grid-template-areas: "header-text" "." "." "button";
 
   @media (min-width: $tablet-width) {
@@ -98,6 +98,8 @@
 
   @media (min-width: $tablet-width) {
     grid-row: 2 / span 2;
+    width: 709px;
+    height: 609px;
   }
 
   @media (min-width: $desktop-width) {

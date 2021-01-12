@@ -29,14 +29,13 @@
 }
 
 .direction-card {
+  display: grid;
   grid-template-areas: "ico title" "text text" "link link";
   grid-template-columns: 1fr 2fr;
-  grid-template-rows: 1fr 2fr 1fr;
 
   @media (min-width: $tablet-width) {
     grid-template-areas: "text ico" "link link";
     grid-template-columns: 2fr 1fr;
-    grid-template-rows: 3fr 1fr;
   }
 }
 
