@@ -1,9 +1,12 @@
 .example {
   background-color: $example-background-color;
   margin-bottom: 0;
+  grid-template-areas: "title" "text" "result" "expenses" "image" "slider";
+  grid-template-columns: 50px auto;
 }
 
 .example__title {
+  grid-area: title;
   font-family: $heading-font;
   font-weight: 400;
   font-size: 36px;
@@ -13,6 +16,7 @@
 }
 
 .example__description {
+  grid-area: text;
   font-family: $main-font;
   font-weight: 500;
   font-size: $main-font-size;
@@ -32,6 +36,7 @@
 }
 
 .example__list {
+  grid-area: result;
   display: grid;
   margin-left: 30px;
   grid-template-columns: 1fr 1fr;
@@ -55,6 +60,7 @@
 }
 
 .example__property-benefit {
+  grid-area: expences;
   font-family: $heading-font;
   font-weight: 500;
   font-size: $main-font-size;

@@ -23,7 +23,9 @@
 
 .about::before {
   content: "";
-  background-color: #68b738;
+  background-color: $color-basic-green;
+  background: url(../../img/index-background-mobile.png) no-repeat;
+  background-size: cover;
   grid-column: 1 / -1;
   grid-row: 1 / span 2;
 

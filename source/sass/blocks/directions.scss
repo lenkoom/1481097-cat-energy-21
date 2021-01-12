@@ -30,18 +30,21 @@
 
 .direction-card {
   display: grid;
-  grid-template-areas: "ico title" "text text" "link link";
-  grid-template-columns: 1fr 2fr;
+  grid-template-areas: "icon title" "text text" "link link";
+  grid-template-columns: 50px auto;
 
   @media (min-width: $tablet-width) {
-    grid-template-areas: "text ico" "link link";
-    grid-template-columns: 2fr 1fr;
+    grid-template-areas: "title icon" "text icon" "link link";
+    grid-template-columns: auto 200px;
+  }
+  @media (min-width: $desktop-width) {
+    grid-template-areas: "icon title" "text text" "link link";
+    grid-template-columns: 100px auto;
   }
 }
 
 .direction-card__icon {
-  grid-area: ico;
-  position: absolute;
+  grid-area: icon;
 }
 
 .direction-card__title {
@@ -52,20 +55,7 @@
   line-height: 37px;
   text-transform: uppercase;
   position: relative;
-  margin: 0;
   margin-left: 70px;
-
-  @media (min-width: $tablet-width) {
-    grid-area: text;
-  }
-}
-
-.direction-card__title::before {
-  position: absolute;
-  display: block;
-  width: 20px;
-  height: 10px;
-  top: -20%;
 }
 
 .direction-card__text {
@@ -79,7 +69,11 @@
   padding: 18px 0 20px 0;
 
   @media (min-width: $tablet-width) {
-    grid-area: text;
+    border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    border: none;
   }
 }
 
