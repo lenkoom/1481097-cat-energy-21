@@ -38,8 +38,8 @@
 .slider__item {
   margin: 0;
   padding: 0;
-  display: none;
   min-height: 400px;
+  text-align: center;
 }
 
 .slider__item:nth-child(1) {
@@ -50,4 +50,5 @@
 .slider__item:nth-child(2) {
   background-repeat: no-repeat;
   background-position: 99% -10px;
+  display: none;
 }

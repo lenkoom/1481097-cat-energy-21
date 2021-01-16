@@ -1,8 +1,20 @@
 .example {
   background-color: $example-background-color;
   margin-bottom: 0;
-  grid-template-areas: "title" "text" "result" "expenses" "image" "slider";
+  grid-template-areas: "title" "text" "result" "expenses" "slider";
   grid-template-columns: 50px auto;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "title title" "text text" "result expenses" "slider slider";
+    background-color: unset;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: calc((100% - 1220px) / 2) 2fr repeat(2, 1fr) calc((100% - 1220px) / 2);
+    grid-template-areas: ". title slider slider ." ". text slider slider ." ". result slider slider ." ". expenses slider slider .";
+  }
 }
 
 .example__title {
@@ -60,11 +72,15 @@
 }
 
 .example__property-benefit {
-  grid-area: expences;
+  grid-area: expenses;
   font-family: $heading-font;
   font-weight: 500;
   font-size: $main-font-size;
   line-height: 20px;
   text-transform: uppercase;
   text-align: center;
+}
+
+.example__slider {
+  grid-area: slider;
 }

@@ -1,4 +1,5 @@
 .field {
+  display: flex;
   list-style-type: none;
   text-transform: uppercase;
 }
@@ -9,6 +10,10 @@
   font-size: $main-form-font-size;
   color: $field-label-color;
   text-transform: uppercase;
+}
+
+.field__input {
+  flex-grow: 1;
 }
 
 .field__icon {

@@ -3,7 +3,7 @@
 }
 
 .programms-form__fieldset {
-  //Nothing
+  border: 0 none;
 }
 
 .programms-form__fieldset--user {
@@ -14,15 +14,37 @@
   //Nothing
 }
 
+.programms-form__fieldset--contacts,
+.programms-form__fieldset--add  {
+  @media (min-width: $desktop-width) {
+    border-top: 2px solid $programms-form-border-color;
+  }
+}
+
 .programms-form__fieldset-legend {
+  display: flex;
   font-family: $heading-font;
   font-size: $title-form-font-size;
-}
+  margin-bottom: 35px;
+  width: 100%;
+  padding: 0;
+  align-items: center;
 
-.programms-form__fieldset--contacts {
-  //Nothing
-}
+  &::after {
+    content: "";
+    display: flex;
+    height: 2px;
+    background-color: $programms-form-border-color;
+    flex-grow: 1;
+    margin-left: 20px;
 
-.programms-form__fieldset--add {
-  //Nothing
+    @media (min-width: $desktop-width) {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    display: inline;
+    padding: 0 15px;
+  }
 }

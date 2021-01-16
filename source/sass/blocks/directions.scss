@@ -37,6 +37,7 @@
     grid-template-areas: "title icon" "text icon" "link link";
     grid-template-columns: auto 200px;
   }
+
   @media (min-width: $desktop-width) {
     grid-template-areas: "icon title" "text text" "link link";
     grid-template-columns: 100px auto;
