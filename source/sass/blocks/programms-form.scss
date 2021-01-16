@@ -15,7 +15,7 @@
 }
 
 .programms-form__fieldset--contacts,
-.programms-form__fieldset--add  {
+.programms-form__fieldset--add {
   @media (min-width: $desktop-width) {
     border-top: 2px solid $programms-form-border-color;
   }
@@ -26,7 +26,6 @@
   font-family: $heading-font;
   font-size: $title-form-font-size;
   margin-bottom: 35px;
-  width: 100%;
   padding: 0;
   align-items: center;
 
@@ -41,6 +40,10 @@
     @media (min-width: $desktop-width) {
       display: none;
     }
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: $title-form-tablet-font-size;
   }
 
   @media (min-width: $desktop-width) {

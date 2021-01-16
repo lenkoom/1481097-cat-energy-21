@@ -16,6 +16,7 @@ $color-special-grey-2:      #666666;
 $color-special-dark-grey:   #444444;
 $color-special-dark-grey-2: #222222;
 $color-status-error:        #ff8282;
+$color-border-input:        #e7e7e7;
 
 // Shadows system
 $shadow-normal: 0 1px 3px rgba(black, 0.16);
@@ -60,6 +61,9 @@ $slider-border-color: $color-special-grey;
 $main-form-font-size: 16px;
 $title-form-font-size: 24px;
 $header-form-font-size: 36px;
+$main-form-tablet-font-size: 20px;
+$title-form-tablet-font-size: 36px;
+$header-form-tablet-font-size: 60px;
 
 // Field
 $field-label-font: $heading-font;
@@ -85,3 +89,7 @@ $main-catalog-color: $color-special-dark-grey;
 $main-about-select-font-size: 20px;
 $main-about-select-font-family: $heading-font;
 $main-about-select-lineheight: 20px;
+
+// Form
+$form-title-font-size: 60px;
+$form-title2-font-size: 20px;
