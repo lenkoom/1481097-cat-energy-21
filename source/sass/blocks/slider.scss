@@ -38,17 +38,17 @@
 .slider__item {
   margin: 0;
   padding: 0;
-  min-height: 400px;
   text-align: center;
 }
 
+.slider__item img {
+  width: 100%;
+}
+
 .slider__item:nth-child(1) {
-  background-repeat: no-repeat;
-  background-position: 99% -10px;
+  // Nothing
 }
 
 .slider__item:nth-child(2) {
-  background-repeat: no-repeat;
-  background-position: 99% -10px;
   display: none;
 }

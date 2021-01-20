@@ -1,5 +1,18 @@
 .product-list {
-  //Nothing
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 25px;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 60px;
+    grid-row-gap: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 80px;
+  }
 }
 
 .product-list__item {

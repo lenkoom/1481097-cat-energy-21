@@ -1,7 +1,14 @@
 .animal-icon {
-  //Nothing
+  padding-bottom: 100%;
+  position: relative;
+  background-color: $color-basic-green;
+  border-radius: 50%;
 }
 
 .animal-icon__image {
-  //Nothing
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 115%;
 }

@@ -1,5 +1,7 @@
 .directions {
-  //Nothing
+  @media (min-width: $desktop-width) {
+    margin-top: 82px;
+  }
 }
 
 .directions__list {
@@ -8,9 +10,6 @@
   margin: 0;
   padding: 0;
   grid-gap: 20px;
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-top: 22px;
 
   @media (min-width: $tablet-width) {
     grid-gap: 30px;
@@ -26,79 +25,4 @@
   background-color: $color-basic-grey;
   padding: 20px;
   padding-top: 32px;
-}
-
-.direction-card {
-  display: grid;
-  grid-template-areas: "icon title" "text text" "link link";
-  grid-template-columns: 50px auto;
-
-  @media (min-width: $tablet-width) {
-    grid-template-areas: "title icon" "text icon" "link link";
-    grid-template-columns: auto 200px;
-  }
-
-  @media (min-width: $desktop-width) {
-    grid-template-areas: "icon title" "text text" "link link";
-    grid-template-columns: 100px auto;
-  }
-}
-
-.direction-card__icon {
-  grid-area: icon;
-}
-
-.direction-card__title {
-  grid-area: title;
-  font-family: $heading-font;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 37px;
-  text-transform: uppercase;
-  position: relative;
-  margin-left: 70px;
-}
-
-.direction-card__text {
-  grid-area: text;
-  font-family: $main-font;
-  font-weight: 500;
-  font-size: $main-font-size;
-  line-height: 18px;
-  color: $color-special-dark-grey;
-  border-bottom: 1px solid $direction-card-text-color;
-  padding: 18px 0 20px 0;
-
-  @media (min-width: $tablet-width) {
-    border: none;
-  }
-
-  @media (min-width: $desktop-width) {
-    border: none;
-  }
-}
-
-.direction-card__link {
-  grid-area: link;
-  display: block;
-  padding: 5px 0 3px;
-  margin: 0;
-  position: relative;
-  color: $color-black;
-  text-decoration: none;
-  font-family: $heading-font;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 16px;
-  text-transform: uppercase;
-}
-
-.direction-card__link::after {
-  content: url("../img/right.svg");
-  display: block;
-  width: 25px;
-  height: 30px;
-  position: absolute;
-  left: 42%;
-  top: 7%;
 }

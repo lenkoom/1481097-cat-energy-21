@@ -1,18 +1,51 @@
 .footer__contact {
-  //Nothing
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: calc((100% - 1220px) / 2) repeat(2, 1fr) calc((100% - 1220px) / 2);
+    grid-template-areas: ". . . ." ". card . ." ". . . .";
+  }
 }
 
 .footer__card {
-  display: flex;
+  grid-area: card;
+  z-index: 4;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: "invitation street" "invitation city";
+  background-color: white;
+  padding: 28px 20px 22px 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 66px 72px 52px 72px;
+  }
 }
 
 .footer__invitation {
+  grid-area: invitation;
   font-family: $heading-font;
   font-weight: 500;
   font-size: 16px;
   color: $footer-invitation-color;
   line-height: 18px;
   text-transform: uppercase;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 21px;
+  }
+}
+
+.footer__address-street {
+  grid-area: street;
+}
+
+.footer__address-city {
+  grid-area: city;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 16px;
+  }
 }
 
 .footer__address-street,
@@ -20,8 +53,24 @@
   font-family: $main-font;
   font-weight: 400;
   font-size: $main-font-size;
-  color: $color-special-grey;
+  color: $color-special-dark-grey;
   line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    text-align: right;
+  }
+}
+
+.footer__map {
+  position: relative;
+  width: 100%;
+  height: 362px;
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / -1;
+    grid-row: 1 / span 3;
+  }
 }
 
 .footer__map iframe {
@@ -32,14 +81,6 @@
   left: 0;
   top: 0;
   z-index: 1;
-}
-
-.footer__map {
-  position: relative;
-  margin-top: 20px;
-  margin-bottom: 8px;
-  width: 100%;
-  height: 362px;
 }
 
 .footer__bottom {
