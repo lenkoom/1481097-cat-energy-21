@@ -1,5 +1,6 @@
 .field {
   display: flex;
+  align-items: center;
   list-style-type: none;
   text-transform: uppercase;
 }
@@ -12,9 +13,14 @@
   text-transform: uppercase;
 }
 
+.field__label {
+  margin-right: 18px;
+}
+
 .field__input {
   flex-grow: 1;
-  border-color: $color-border-input;
+  border: 1px solid $color-border-input;
+  padding: 13px 16px;
 
   &::-webkit-input-placeholder {
     color: $field-label-color;

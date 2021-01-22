@@ -74,7 +74,7 @@
         </fieldset>
         <fieldset class="programms-form__fieldset programms-form__fieldset--contacts">
           <legend class="programms-form__fieldset-legend">Контактные данные (владельца кота)</legend>
-          <ul class="programms__list fields-list">
+          <ul class="programms__list fields-list programms-form__fields-list programms-form__fields-list--two-column-desktop">
             <li class="field">
               <label class="field__label" for="user-email">E-mail:*</label>
               <input class="field__input" type="email" name="contact__email" required id="user-email" placeholder="kuklachev@gmail.com">
@@ -83,16 +83,14 @@
               <label class="field__label" for="user-tel">Телефон:*</label>
               <input class="field__input" type="tel" name="contact__tel" required id="user-tel" placeholder="8 (960) 900-60-90">
             </li>
-            <fieldset class="programms-form__fieldset programms-form__fieldset--comment"></fieldset>
-              <legend class="programms-form__fieldset-legend">Комментарий</legend>
-              <ul class="programms__list fields-list"></ul>
-                <li class="field">
-                  <label class="field__label" for="about">Текст письма:</label>
-                  <textarea placeholder="Расскажите обо всех повадках кота" class="field__input" id="about"></textarea>
-                </li>
-              </ul>
-            </fieldset>
           </ul>
+        </fieldset>
+        <fieldset class="programms-form__fieldset programms-form__fieldset--comment">
+          <legend class="programms-form__fieldset-legend">Комментарий</legend>
+          <div class="field">
+            <label class="field__label visually-hidden" for="about">Текст письма:</label>
+            <textarea placeholder="Расскажите обо всех повадках кота" class="field__input" id="about"></textarea>
+          </div>
         </fieldset>
         <fieldset class="programms-form__fieldset programms-form__fieldset--add">
           <legend class="programms-form__fieldset-legend">Дополнительно</legend>
@@ -123,7 +121,7 @@
             </li>
           </ul>
         </fieldset>
-        <div class="programms__footer">
+        <div class="programms-form__footer">
           <button type="submit" class="button programms__button">Отправить заявку</button>
           <p class="programms__glose">*&nbsp;&mdash; Обязательные поля</p>
         </div>

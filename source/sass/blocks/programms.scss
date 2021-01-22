@@ -1,26 +1,29 @@
 .programms {
-  margin-left: 70px;
-  margin-right: 30px;
-
-  @media (min-width: $desktop-width) {
-    display: grid;
-    grid-template-columns: calc((100% - 1220px) / 2) repeat(2, 1fr) calc((100% - 1220px) / 2);
-    grid-template-areas: "header ." "text ." "user-info check-programm" "contacts contacts" "comment comment" "add add";
-  }
+  // Nothing
 }
 
 .programms__item {
   font-family: $heading-font;
+  line-height: 36px;
   font-size: $header-form-font-size;
   color: $color-black;
   font-weight: 400;
+  max-width: 1260px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: auto;
+  margin-bottom: 37px;
 
   @media (min-width: $tablet-width) {
     font-size: $header-form-tablet-font-size;
+    line-height: 60px;
+    padding-left: 70px;
+    margin-bottom: 54px;
   }
 
   @media (min-width: $desktop-width) {
     grid-area: header;
+    padding-left: 20px;
   }
 }
 
@@ -30,14 +33,22 @@
   color: $color-black;
   text-transform: uppercase;
   line-height: 18px;
+  max-width: 1260px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: auto;
+  margin-bottom: 39px;
 
   @media (min-width: $tablet-width) {
     font-size: $form-title2-font-size;
     line-height: 30px;
+    padding-left: 70px;
+    margin-bottom: 66px;
+  }
 
-    @media (min-width: $desktop-width) {
-      grid-area: header;
-    }
+  @media (min-width: $desktop-width) {
+    grid-area: header;
+    padding-left: 20px;
   }
 }
 
@@ -47,14 +58,6 @@
 
 .programms__list {
   list-style-type: none;
-}
-
-.programms__footer {
-  @media (min-width: $tablet-width) {
-    display: flex;
-    align-items: baseline;
-    justify-content: center;
-  }
 }
 
 .programms__button {

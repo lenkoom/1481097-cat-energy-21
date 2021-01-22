@@ -3,6 +3,8 @@
   grid-template-columns: 66px 1fr 66px;
   grid-template-rows: 66px auto;
   grid-template-areas: "logo-image logo-text nav-toggler" "nav nav nav";
+  min-height: 66px;
+  align-items: center;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 60px 114px 1fr;
@@ -54,4 +56,5 @@
 
 .header__navigation {
   grid-area: nav;
+  align-self: end;
 }
