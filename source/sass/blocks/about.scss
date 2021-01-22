@@ -12,12 +12,15 @@
   @media (min-width: $tablet-width) {
     grid-template-rows: 263px 54px 526px;
     grid-template-areas: "header-text" "." "button";
+    padding-left: 30px;
+    padding-right: 30px;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: calc((100% - 1220px) / 2) repeat(4, 1fr) calc((100% - 1220px) / 2);
     grid-template-rows: 140px 312px 240px;
     grid-template-areas: ". . . . . ." ". header-text header-text . . ." ". button button . . .";
+    padding: 0;
   }
 }
 
@@ -44,6 +47,9 @@
 .about__description {
   grid-area: header-text;
   padding: 25px 35px 25px;
+  @media (min-width: $tablet-width) {
+    padding-left: 82px;
+  }
 }
 
 .about__title {
@@ -119,6 +125,7 @@
 
 .about__select {
   grid-area: button;
+  justify-self: stretch;
   text-decoration: none;
   color: $button-color;
   font-size: $main-font-size;
@@ -129,8 +136,8 @@
   padding: 21px 100px;
   text-transform: uppercase;
   text-align: center;
-  justify-self: center;
-  margin: 5px 0 0;
+  margin-left: 20px;
+  margin-right: 20px;
   align-items: center;
 
   @media (min-width: $tablet-width) {
@@ -138,6 +145,8 @@
     line-height: $main-lineheight;
     justify-self: start;
     align-self: start;
+    margin: 0;
+    margin-left: 82px;
   }
 
   @media (min-width: $desktop-width) {
