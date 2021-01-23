@@ -3,19 +3,20 @@
   grid-template-columns: 66px 1fr 66px;
   grid-template-rows: 66px auto;
   grid-template-areas: "logo-image logo-text nav-toggler" "nav nav nav";
-  min-height: 66px;
   align-items: center;
 
   @media (min-width: $tablet-width) {
-    grid-template-columns: 60px 114px 1fr;
+    grid-template-columns: 174px 1fr;
     grid-template-rows: 52px;
-    grid-template-areas: "logo-image logo-text nav";
+    grid-template-areas: "logo-image nav";
+    padding-top: 25px;
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: calc((100% - 1220px) / 2) 70px 132px 1fr calc((100% - 1220px) / 2);
+    grid-template-columns: calc((100% - 1220px) / 2) 202px 1fr calc((100% - 1220px) / 2);
     grid-template-rows: 52px;
-    grid-template-areas: ". logo-image logo-text nav .";
+    grid-template-areas: ". logo-image  nav .";
+    padding-top: 54px;
   }
 }
 
@@ -26,19 +27,21 @@
 }
 
 .header__logo-image img {
-  width: 33px;
-  height: 38px;
+  width: 100%;
 }
 
 .header__logo {
   grid-area: logo-text;
   align-self: center;
   justify-self: center;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .header__logo img {
-  width: 101px;
-  height: 18px;
+  width: 100%;
 }
 
 .header__menu-button {
@@ -56,5 +59,5 @@
 
 .header__navigation {
   grid-area: nav;
-  align-self: end;
+  align-self: center;
 }
