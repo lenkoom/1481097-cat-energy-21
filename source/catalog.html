@@ -267,52 +267,56 @@
             </article>
           </li>
           <li class="products-list__item">
-            <article class="product-card">
+            <article class="more-products-card">
               <picture>
                 <source media="(min-width: 1200px)" srcset="img/sprite/icon-plus-mobile.svg">
                 <source media="(min-width: 768px)" srcset="img/sprite/icon-plus.svg">
-                <img class="page-header__logo-image" src="img/sprite/icon-plus.svg" width="30" height="30" alt="plus">
+                <img class="more-products-card__icon" src="img/sprite/icon-plus.svg" width="30" height="30" alt="plus">
               </picture>
-              <h2 class="product-card__title">Показать еще 100500 товаров</h2>
-              <p class="product-card__slogan">На самом деле вкусов гораздо больше!</p>
-              <button value="#" class="button button--light-gray products-card__show-all">Показать все</button>
+              <h2 class="more-products-card__title">Показать еще 100500 товаров</h2>
+              <p class="more-products-card__slogan">На самом деле вкусов гораздо больше!</p>
+              <button value="#" class="button button--light-gray more-products-card__show-all">Показать все</button>
             </article>
           </li>
         </ul>
       </section>
       <section class="additional">
         <h3 class="additional__topic">Дополнительные товары</h3>
-        <ul class="additional__list">
-          <li class="additional__item product-small-card">
-            <p class="product-small-card__title">Сахарохаменитель</p>
-            <span class="product-small-card__quantity">1 упаковка(100 г)</span>
-            <span class="product-small-card__price">200 Р.</span>
-            <button class="button product-small-card__order">Заказать</button>
-          </li>
-          <li class="additional__item product-small-card">
-            <p class="product-small-card__title">Питьевая вода</p>
-            <span class="product-small-card__quantity">5 литров</span>
-            <span class="product-small-card__price">50 Р.</span>
-            <button class="button product-small-card__order">Заказать</button>
-          </li>
-          <li class="additional__item product-small-card">
-            <p class="product-small-card__title">Молоко</p>
-            <span class="product-small-card__quantity">1 литр</span>
-            <span class="product-small-card__price">100 Р.</span>
-            <button class="button product-small-card__order">Заказать</button>
-          </li>
-          <li class="additional__item product-small-card">
-            <p class="product-small-card__title">Витамины</p>
-            <span class="product-small-card__quantity">1 упаковка (30 г)</span>
-            <span class="product-small-card__price">300 Р.</span>
-            <button class="button product-small-card__order">Заказать</button>
-          </li>
-        </ul>
-        <div class="additional__gift gift">
-          <div class="gift__icon">
-            <img src="https://via.placeholder.com/150x150" width="78" height="80" alt="Gift">
+        <div class="additional__content">
+          <ul class="additional__list">
+            <li class="additional__item product-small-card">
+              <p class="product-small-card__title">Сахарохаменитель</p>
+              <span class="product-small-card__quantity">1 упаковка(100 г)</span>
+              <span class="product-small-card__price">200 Р.</span>
+              <button class="button product-small-card__order">Заказать</button>
+            </li>
+            <li class="additional__item product-small-card">
+              <p class="product-small-card__title">Питьевая вода</p>
+              <span class="product-small-card__quantity">5 литров</span>
+              <span class="product-small-card__price">50 Р.</span>
+              <button class="button product-small-card__order">Заказать</button>
+            </li>
+            <li class="additional__item product-small-card">
+              <p class="product-small-card__title">Молоко</p>
+              <span class="product-small-card__quantity">1 литр</span>
+              <span class="product-small-card__price">100 Р.</span>
+              <button class="button product-small-card__order">Заказать</button>
+            </li>
+            <li class="additional__item product-small-card">
+              <p class="product-small-card__title">Витамины</p>
+              <span class="product-small-card__quantity">1 упаковка (30 г)</span>
+              <span class="product-small-card__price">300 Р.</span>
+              <button class="button product-small-card__order">Заказать</button>
+            </li>
+          </ul>
+          <div class="additional__gift gift">
+            <div class="gift__icon">
+              <svg width="78" height="80" fill="#ffffff">
+                <use xlink:href="img/sprite.svg#icon-gift" />
+              </svg>
+            </div>
+            <p class="gift__description">Закажите все и получите чехол для кота в подарок!</p>
           </div>
-          <p class="gift__description">Закажите все и получите чехол для кота в подарок!</p>
         </div>
       </section>
     </main>
