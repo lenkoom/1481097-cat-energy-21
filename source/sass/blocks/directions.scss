@@ -1,6 +1,16 @@
 .directions {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 22px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
   @media (min-width: $desktop-width) {
     margin-top: 82px;
+    padding: 0;
   }
 }
 
@@ -25,4 +35,8 @@
   background-color: $color-basic-grey;
   padding: 20px;
   padding-top: 32px;
+
+  @media (min-width: $tablet-width) {
+    padding: 77px 61px 53px 52px;
+  }
 }

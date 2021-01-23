@@ -8,6 +8,7 @@
     grid-template-areas: "title icon" "text icon" "link link";
     grid-template-columns: auto 200px;
     grid-column-gap: 17px;
+
   }
 
   @media (min-width: $desktop-width) {
@@ -63,8 +64,8 @@
   font-family: $heading-font;
   font-weight: 400;
   font-size: 16px;
-  line-height: 16px;
   text-transform: uppercase;
+  height: 38px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -72,12 +73,14 @@
 }
 
 .direction-card__link::after {
-  content: url("../img/right.svg");
-  display: inline-flex;
-  align-items: center;
-  width: 25px;
+  content: "";
+  width: 24px;
   height: 12px;
   margin-left: 17px;
+  background-image: url("../img/icon-right.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 
   @media (min-width: $tablet-width) {
     margin-left: 25px;
