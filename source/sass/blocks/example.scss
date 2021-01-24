@@ -64,7 +64,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 56px;
+    margin-top: 22px;
     margin-bottom: 76px;
   }
 }
@@ -86,7 +86,9 @@
 
   @media (min-width: $desktop-width) {
     margin-top: 70px;
-    margin-bottom: 70px;
+    margin-bottom: 40px;
+    max-width: 436px;
+    align-self: start;
   }
 }
 
@@ -121,6 +123,11 @@
   padding-bottom: 17px;
   margin: 0;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .example__property-name {
@@ -165,13 +172,15 @@
     flex-direction: column;
     max-width: 327px;
     margin-top: 0;
+    padding-bottom: 64px;
+    font-size: 20px;
   }
 
   @media (min-width: $desktop-width) {
     justify-self: start;
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 60px;
+    padding-top: 20px;
   }
 }
 

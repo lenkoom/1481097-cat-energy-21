@@ -13,6 +13,8 @@
 }
 
 .page__header {
+  margin-bottom: 25px;
+
   &--fixed-top {
     @media (min-width: $desktop-width) {
       position: absolute;

@@ -7,6 +7,12 @@
   font-size: $header-catalog-font-size;
   color: $color-black;
   font-weight: 400;
+  margin-top: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .products__list {

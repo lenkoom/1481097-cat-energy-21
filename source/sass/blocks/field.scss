@@ -11,6 +11,10 @@
   font-size: $main-form-font-size;
   color: $field-label-color;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
 }
 
 .field__label {

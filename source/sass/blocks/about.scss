@@ -47,8 +47,14 @@
 .about__description {
   grid-area: header-text;
   padding: 25px 35px 25px;
+
   @media (min-width: $tablet-width) {
     padding-left: 82px;
+  }
+
+  @media (min-width: $desktop-width) {
+    align-self: end;
+    margin-bottom: 24px;
   }
 }
 
@@ -72,6 +78,7 @@
     font-size: 60px;
     line-height: 60px;
     text-align: left;
+    margin-bottom: 15px;
   }
 }
 
@@ -94,6 +101,7 @@
     font-size: 20px;
     line-height: 20px;
     text-align: left;
+    padding-bottom: 0;
   }
 }
 
@@ -131,9 +139,9 @@
   font-size: $main-font-size;
   font-family: $main-about-select-font-family;
   line-height: $main-lineheight;
-  display: inline-block;
+  display: inline-flex;
   background-color: $button-background-color;
-  padding: 21px 100px;
+  padding: 14px 26px;
   text-transform: uppercase;
   text-align: center;
   margin-left: 20px;
@@ -147,6 +155,7 @@
     align-self: start;
     margin: 0;
     margin-left: 82px;
+    min-height: 54px;
   }
 
   @media (min-width: $desktop-width) {
@@ -154,5 +163,6 @@
     line-height: $main-lineheight;
     justify-self: start;
     align-self: start;
+    margin-top: 2px;
   }
 }

@@ -10,13 +10,17 @@
     grid-template-rows: 52px;
     grid-template-areas: "logo-image nav";
     padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: calc((100% - 1220px) / 2) 202px 1fr calc((100% - 1220px) / 2);
     grid-template-rows: 52px;
     grid-template-areas: ". logo-image  nav .";
-    padding-top: 54px;
+    padding-top: 56px;
+    padding-bottom: 54px;
   }
 }
 
@@ -60,4 +64,9 @@
 .header__navigation {
   grid-area: nav;
   align-self: center;
+  border-bottom: 1px solid #E6E6E6;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: none;
+  }
 }

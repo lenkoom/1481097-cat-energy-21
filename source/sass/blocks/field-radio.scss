@@ -1,6 +1,10 @@
 .field-radio {
   font-family: $heading-font;
   font-size: 16px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
 }
 
 .field-radio__input {
@@ -24,5 +28,10 @@
     margin-right: 15px;
     border-radius: 50%;
     border: 1px solid $field-border-color;
+
+    @media (min-width: $tablet-width) {
+      height: 40px;
+      width: 40px;
+    }
   }
 }

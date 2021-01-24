@@ -26,7 +26,7 @@
         <ul class="navigation__menu">
           <li class="navigation__item"><a class="navigation__link" href="index.html">Главная</a></li>
           <li class="navigation__item"><a class="navigation__link" href="catalog.html">Каталог продукции</a></li>
-          <li class="navigation__item"><a class="navigation__link" href="form.html">Подбор программы</a></li>
+          <li class="navigation__item"><a class="navigation__link navigation__link--current">Подбор программы</a></li>
         </ul>
       </nav>
     </header>
@@ -39,16 +39,16 @@
           <legend class="visually-hidden">Основная информация</legend>
           <ul class="fields-list">
             <li class="field">
-              <label for="user-name" class="field__label">Имя(*):</label>
+              <label for="user-name" class="field__label">Имя:*</label>
               <input class="field__input" type="text" name="user-name" required id="user-name" placeholder="Барсик">
               <span class="field__icon"></span>
             </li>
             <li class="field">
-              <label for="user-weight" class="field__label">Вес(*):</label>
+              <label for="user-weight" class="field__label">Вес(кг):*</label>
               <input class="field__input" type="text" name="user-weight" required id="user-weight" placeholder="7">
             </li>
             <li class="field">
-              <label for="user-age" class="field__label">Возраст(лет):</label>
+              <label for="user-age" class="field__label">Возраст(лет):*</label>
               <input class="field__input" type="text" name="user-age" required id="user-age" placeholder="7">
             </li>
           </ul>
@@ -93,7 +93,7 @@
           <legend class="programms-form__fieldset-legend">Комментарий</legend>
           <div class="field">
             <label class="field__label visually-hidden" for="about">Текст письма:</label>
-            <textarea placeholder="Расскажите обо всех повадках кота" class="field__input" id="about"></textarea>
+            <textarea placeholder="Расскажите обо всех повадках кота" class="field__input" id="about" rows="6"></textarea>
           </div>
         </fieldset>
         <fieldset class="programms-form__fieldset programms-form__fieldset--add">

@@ -8,70 +8,24 @@
   padding: 0;
   text-align: center;
 
-  @media (min-width: $desktop-width) {
-    // margin-top: 70px;
+  @media (min-width: $tablet-width) {
     text-align: right;
   }
 }
 
 .navigation__item {
   @media (min-width: $tablet-width) {
-    display: inline;
-  }
+    display: inline-flex;
 
-  @media (min-width: $desktop-width) {
-    display: inline;
-    margin: 0 32px 0 0;
-  }
-}
-
-.navigation__item:nth-child(1) {
-  border-top: 1px solid #e6e6e6;
-  border-bottom: 1px solid #e6e6e6;
-  padding: 25px 0 20px;
-
-  @media (min-width: $tablet-width) {
-    border: none;
-    padding: 0;
-  }
-
-  @media (min-width: $desktop-width) {
-    border-bottom: 1px solid $navigation-border-color;
-    border-top: none;
-    padding: 0;
-  }
-}
-
-.navigation__item:nth-child(2) {
-  border-bottom: 1px solid #e6e6e6;
-  padding: 20px 0 20px;
-
-  @media (min-width: $tablet-width) {
-    border: none;
-    padding: 0;
-  }
-
-  @media (min-width: $desktop-width) {
-    border: none;
-    padding: 0;
-  }
-}
-
-.navigation__item:nth-child(3) {
-  padding: 25px 0 20px;
-
-  @media (min-width: $tablet-width) {
-    border: none;
-    padding: 0;
-  }
-
-  @media (min-width: $desktop-width) {
-    border: none;
-    padding: 0;
+    & + .navigation__item {
+      margin-left: 35px;
+    }
   }
 }
 
 .navigation__link {
+  display: flex;
+  justify-content: center;
   text-decoration: none;
   font-family: $heading-font;
   font-weight: 400;
@@ -79,10 +33,32 @@
   color: $color-black;
   line-height: 20px;
   text-transform: uppercase;
+  padding-top: 23px;
+  padding-bottom: 23px;
+  border-top: 1px solid #E6E6E6;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-top: none;
+    border-bottom: 2px solid transparent;
+  }
+
+  &--current {
+    @media (min-width: $tablet-width) {
+      border-bottom: 2px solid #68B738;
+    }
+  }
 
   &--white-on-desktop {
     @media (min-width: $desktop-width) {
-      color: white;
+      color: #ffffff;
+    }
+  }
+
+  &--white-on-desktop.navigation__link--current {
+    @media (min-width: $desktop-width) {
+      border-bottom: 2px solid #ffffff;
     }
   }
 }
