@@ -117,8 +117,6 @@
         </p>
         <!--СЛАЙДЕР-->
         <div class="example__slider slider">
-          <input class="visually-hidden" type="radio" id="client-before" name="toggle" checked>
-          <input class="visually-hidden" type="radio" id="client-after" name="toggle">
           <ul class="slider__list">
             <li class="slider__item">
               <img src="img/before-mobile.png" width="311" height="232" alt="До Cat Energy Slim">
@@ -128,8 +126,11 @@
             </li>
           </ul>
           <div class="slider__controls">
-            <label for="client-before">Было</label>
-            <label for="client-after">Стало</label>
+            <button class="slider__control">Было</button>
+            <div class="slider__control-line">
+              <button class="slider__control-line-button"></button>
+            </div>
+            <button class="slider__control">Стало</button>
           </div>
         </div>
       </div>
