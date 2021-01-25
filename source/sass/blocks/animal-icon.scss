@@ -4,7 +4,6 @@
   background-color: $color-basic-green;
   border-radius: 50%;
 
-
   &--slim {
     @media (min-width: $desktop-width) {
       left: 18%;
@@ -26,4 +25,11 @@
   height: 110%;
   width: 134%;
   max-width: unset;
+
+  &--pro {
+    @media (min-width: $desktop-width) {
+      left: 52%;
+      top: 49%;
+    }
+  }
 }

@@ -28,6 +28,8 @@
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 80px;
+    margin-left: 20px;
+    margin-right: 20px;
   }
 }
 
@@ -42,13 +44,20 @@
 
   @media (min-width: $desktop-width) {
     padding-top: 50px;
-    padding-right: 30px;
   }
 }
 
-.directions__item:nth-child(2) {
+.directions__item:nth-child(1) {
   @media (min-width: $desktop-width) {
-    padding-top: 50px;
+    padding-left: 33px;
+    padding-right: 20px;
+  }
+}
+
+/*.directions__item:nth-child(2) {
+  @media (min-width: $desktop-width) {
+    padding-left: 50px;
     padding-right: 30px;
   }
 }
+*/
