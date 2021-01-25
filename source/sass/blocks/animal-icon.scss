@@ -3,11 +3,24 @@
   position: relative;
   background-color: $color-basic-green;
   border-radius: 50%;
+
+
+  &--slim {
+    @media (min-width: $desktop-width) {
+      left: 18%;
+    }
+  }
+
+  &--pro {
+    @media (min-width: $desktop-width) {
+      right: 2%;
+    }
+  }
 }
 
 .animal-icon__image {
   position: absolute;
-  left: 50%;
+  left: 53%;
   top: 50%;
   transform: translate(-50%, -50%);
   height: 110%;

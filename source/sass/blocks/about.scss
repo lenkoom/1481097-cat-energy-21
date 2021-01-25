@@ -72,6 +72,7 @@
     font-size: 60px;
     line-height: 60px;
     text-align: left;
+    margin-top: 56px;
   }
 }
 
@@ -94,6 +95,7 @@
     font-size: 20px;
     line-height: 20px;
     text-align: left;
+    margin-top: 18px;
   }
 }
 
@@ -115,6 +117,8 @@
     grid-column: 3 / span 3;
     width: 552px;
     height: 499px;
+    margin-bottom: 50px;
+    margin-right: 72px;
   }
 }
 
@@ -154,5 +158,6 @@
     line-height: $main-lineheight;
     justify-self: start;
     align-self: start;
+    padding: 19px 25px;
   }
 }

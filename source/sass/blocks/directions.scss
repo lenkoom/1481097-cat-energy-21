@@ -39,4 +39,16 @@
   @media (min-width: $tablet-width) {
     padding: 77px 61px 53px 52px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 50px;
+    padding-right: 30px;
+  }
+}
+
+.directions__item:nth-child(2) {
+  @media (min-width: $desktop-width) {
+    padding-top: 50px;
+    padding-right: 30px;
+  }
 }

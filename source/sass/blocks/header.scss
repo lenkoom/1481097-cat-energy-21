@@ -24,6 +24,10 @@
   grid-area: logo-image;
   align-self: center;
   justify-self: center;
+
+  @media (min-width: $desktop-width) {
+  margin-top: 11px;
+  }
 }
 
 .header__logo-image img {
