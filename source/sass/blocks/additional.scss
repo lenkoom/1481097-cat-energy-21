@@ -48,7 +48,7 @@
   &::after {
     content: "";
     height: 2px;
-    background-color: #68B738;
+    background-color: #68b738;
     flex-grow: 1;
     margin-left: 20px;
 
@@ -62,7 +62,7 @@
       content: "";
       width: 30px;
       height: 2px;
-      background-color: #68B738;
+      background-color: #68b738;
       margin-right: 37px;
     }
 
@@ -90,8 +90,8 @@
 }
 
 .additional__item {
-  border-top: 1px solid #CDCDCD;
-  border-bottom: 1px solid #CDCDCD;
+  border-top: 1px solid #cdcdcd;
+  border-bottom: 1px solid #cdcdcd;
   padding-top: 13px;
   padding-bottom: 18px;
 
@@ -100,14 +100,14 @@
   }
 
   @media (min-width: $tablet-width) {
-    border: 1px solid #CDCDCD;
+    border: 1px solid #cdcdcd;
     padding: 26px 38px 28px 36px;
   }
 
   @media (min-width: $desktop-width) {
     padding: 15px 0;
-    border-top: 1px solid #CDCDCD;
-    border-bottom: 1px solid #CDCDCD;
+    border-top: 1px solid #cdcdcd;
+    border-bottom: 1px solid #cdcdcd;
     border-left: 0;
     border-right: 0;
   }

@@ -30,7 +30,7 @@
   justify-self: center;
 
   @media (min-width: $desktop-width) {
-  margin-top: 11px;
+    margin-top: 11px;
   }
 }
 
@@ -78,7 +78,7 @@
 .header__navigation {
   grid-area: nav;
   align-self: center;
-  border-bottom: 1px solid #E6E6E6;
+  border-bottom: 1px solid #e6e6e6;
 
   @media (min-width: $tablet-width) {
     border-bottom: none;

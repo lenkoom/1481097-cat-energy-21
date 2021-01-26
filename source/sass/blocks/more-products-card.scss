@@ -6,16 +6,17 @@
   flex-grow: 1;
 
   @media (min-width: $tablet-width) {
-    border: 2px solid #F2F2F2;
+    border: 2px solid #f2f2f2;
     padding: 52px 38px 38px 38px;
     margin-top: 100px;
   }
 
-  &::before, &::after {
+  &::before,
+  &::after {
     content: "";
     display: block;
     height: 1px;
-    background-color: #EBEBEB;
+    background-color: #ebebeb;
     align-self: stretch;
     margin-left: -20px;
     margin-right: -20px;
@@ -36,6 +37,7 @@
 
 .more-products-card__icon {
   text-align: center;
+
   @media (min-width: $tablet-width) {
     height: 60px;
     width: 60px;
