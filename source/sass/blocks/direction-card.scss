@@ -1,0 +1,120 @@
+.direction-card {
+  display: grid;
+  grid-template-areas: "icon title" "text text" "link link";
+  grid-template-columns: 50px 1fr;
+  grid-column-gap: 19px;
+
+  @media (min-width: $tablet-width) {
+    grid-template-areas: "title icon" "text icon" "link link";
+    grid-template-columns: auto 200px;
+    grid-column-gap: 17px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-areas: "icon title" "text text" "link link";
+    grid-template-columns: 100px 1fr;
+    grid-column-gap: 62px;
+  }
+}
+
+.direction-card__icon {
+  grid-area: icon;
+}
+
+.direction-card__title {
+  grid-area: title;
+  align-self: center;
+  font-family: $heading-font;
+  font-weight: 400;
+  font-size: 24px;
+  text-transform: uppercase;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+  }
+
+  &--slim {
+    @media (min-width: $desktop-width) {
+      margin-left: 20px;
+    }
+  }
+
+  &--pro {
+    @media (min-width: $desktop-width) {
+      //Nothing
+    }
+  }
+}
+
+.direction-card__text {
+  grid-area: text;
+  font-family: $main-font;
+  font-weight: 500;
+  font-size: $main-font-size;
+  line-height: 18px;
+  color: $color-special-dark-grey;
+  border-bottom: 1px solid $direction-card-text-color;
+  padding: 18px 0 20px 0;
+
+  @media (min-width: $tablet-width) {
+    border: unset;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 24px;
+    margin-bottom: 2px;
+  }
+}
+
+.direction-card__link {
+  grid-area: link;
+  display: flex;
+  align-items: center;
+  padding: 5px 0 3px;
+  margin: 0;
+  color: $color-black;
+  text-decoration: none;
+  font-family: $heading-font;
+  font-weight: 400;
+  font-size: 16px;
+  text-transform: uppercase;
+  height: 38px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
+
+  &--slim {
+    @media (min-width: $desktop-width) {
+      margin-left: 20px;
+    }
+  }
+
+  &--pro {
+    @media (min-width: $desktop-width) {
+      //Nothing
+    }
+  }
+}
+
+.direction-card__link::after {
+  content: "";
+  width: 24px;
+  height: 12px;
+  margin-left: 17px;
+  background-image: url("../img/icon-right.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 28px;
+  }
+}

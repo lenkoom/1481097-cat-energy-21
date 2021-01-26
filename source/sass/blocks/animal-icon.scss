@@ -1,7 +1,35 @@
 .animal-icon {
-  //Nothing
+  padding-bottom: 100%;
+  position: relative;
+  background-color: $color-basic-green;
+  border-radius: 50%;
+
+  &--slim {
+    @media (min-width: $desktop-width) {
+      left: 18%;
+    }
+  }
+
+  &--pro {
+    @media (min-width: $desktop-width) {
+      right: 2%;
+    }
+  }
 }
 
 .animal-icon__image {
-  //Nothing
+  position: absolute;
+  left: 53%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 110%;
+  width: 134%;
+  max-width: unset;
+
+  &--pro {
+    @media (min-width: $desktop-width) {
+      left: 52%;
+      top: 49%;
+    }
+  }
 }

@@ -1,17 +1,128 @@
 .additional {
-  //Nothing
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 25px;
+  padding-bottom: 76px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 68px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    padding: 0;
+    padding-top: 75px;
+    padding-bottom: 86px;
+    grid-template-columns: calc((100% - 1220px) / 2) 1fr calc((100% - 1220px) / 2);
+    grid-template-areas: "title title title" ". content .";
+  }
 }
 
 .additional__topic {
+  grid-area: title;
+  display: flex;
+  align-items: center;
   font-family: $title-catalog-font;
   font-size: $header-2-catalog-font-size;
   font-weight: 400;
+  color: #000000;
+  margin: 0;
+  margin-bottom: 36px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: -30px;
+    margin-right: -30px;
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 80px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 81px;
+  }
+
+  &::after {
+    content: "";
+    height: 2px;
+    background-color: #68b738;
+    flex-grow: 1;
+    margin-left: 20px;
+
+    @media (min-width: $tablet-width) {
+      margin-left: 36px;
+    }
+  }
+
+  &::before {
+    @media (min-width: $tablet-width) {
+      content: "";
+      width: 30px;
+      height: 2px;
+      background-color: #68b738;
+      margin-right: 37px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: calc((100% - 1220px) / 2 - 40px);
+    }
+  }
+}
+
+.additional__content {
+  grid-area: content;
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 896px 1fr;
+    grid-template-areas: "list gift";
+    grid-column-gap: 80px;
+  }
 }
 
 .additional__list {
-  //Nothing
+  grid-area: list;
+  margin: 0;
+  padding: 0;
 }
 
 .additional__item {
-  //Nothing
+  border-top: 1px solid #cdcdcd;
+  border-bottom: 1px solid #cdcdcd;
+  padding-top: 13px;
+  padding-bottom: 18px;
+
+  & + .additional__item {
+    margin-top: -1px;
+  }
+
+  @media (min-width: $tablet-width) {
+    border: 1px solid #cdcdcd;
+    padding: 26px 38px 28px 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 15px 0;
+    border-top: 1px solid #cdcdcd;
+    border-bottom: 1px solid #cdcdcd;
+    border-left: 0;
+    border-right: 0;
+  }
+}
+
+.additional__gift {
+  grid-area: gift;
+  margin-top: 39px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 69px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 0;
+    max-width: 245px;
+  }
 }

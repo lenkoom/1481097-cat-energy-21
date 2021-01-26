@@ -4,53 +4,55 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Cat Energy</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style.min.css">
   </head>
   <body class="page__body">
     <header class="page__header header">
       <!--НАВИГАЦИЯ-->
       <a href="index.html" class="header__logo-image">
-        <img src="https://via.placeholder.com/150x150" width="189" height="38" alt="Логотип интернет-магазина Cat Energy">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/logo/logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo/logo-tablet.svg">
+          <img class="page-header__logo-image" src="img/logo/logo-mobile.svg" width="33" height="37" alt="Логотип интернет-магазина Cat Energy">
+        </picture>
       </a>
       <a href="index.html" class="header__logo">
-        <img src="https://via.placeholder.com/150x150" width="189" height="38" alt="Логотип текстовая часть интернет-магазина Cat Energy">
+        <img src="img/logo/logo-mobile-text.svg" width="101" height="18" alt="Логотип текстовая часть интернет-магазина Cat Energy">
       </a>
-      <button class="header__menu-button">
-        <img src="https://via.placeholder.com/150x150" width="24" height="16" alt="Menu">
-      </button>
+      <button class="header__menu-button"></button>
       <nav class="header__navigation navigation">
         <ul class="navigation__menu">
           <li class="navigation__item"><a class="navigation__link" href="index.html">Главная</a></li>
           <li class="navigation__item"><a class="navigation__link" href="catalog.html">Каталог продукции</a></li>
-          <li class="navigation__item"><a class="navigation__link" href="form.html">Подбор программы</a></li>
+          <li class="navigation__item"><a class="navigation__link navigation__link--current">Подбор программы</a></li>
         </ul>
       </nav>
     </header>
     <main class="page__main programms">
       <h1 class="programms__item">Подбор программы</h1>
-      <p class="programms__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+      <p class="programms__description">Заполните анкету, и мы подберем <br>программу питания для вашего кота</p>
       <!--ФОРМА-->
       <form class="programms__form programms-form" action="https://echo.htmlacademy.ru" method="POST">
         <fieldset class="programms-form__fieldset programms-form__fieldset--user">
           <legend class="visually-hidden">Основная информация</legend>
           <ul class="fields-list">
             <li class="field">
-              <label for="user-name" class="field__label">Имя(*):</label>
+              <label for="user-name" class="field__label">Имя:*</label>
               <input class="field__input" type="text" name="user-name" required id="user-name" placeholder="Барсик">
               <span class="field__icon"></span>
             </li>
             <li class="field">
-              <label for="user-weight" class="field__label">Вес(*):</label>
+              <label for="user-weight" class="field__label">Вес(кг):*</label>
               <input class="field__input" type="text" name="user-weight" required id="user-weight" placeholder="7">
             </li>
             <li class="field">
-              <label for="user-age" class="field__label">Возраст(лет):</label>
+              <label for="user-age" class="field__label">Возраст(лет):*</label>
               <input class="field__input" type="text" name="user-age" required id="user-age" placeholder="7">
             </li>
           </ul>
         </fieldset>
         <fieldset class="programms-form__fieldset programms-form__fieldset--check">
-          <legend class="programms-form__fieldset-legend">Программы</legend>
+          <legend class="programms-form__fieldset-legend visually-hidden">Программы</legend>
           <ul class="programms__list fields-list">
             <li>
               <label class="field-radio">
@@ -74,7 +76,7 @@
         </fieldset>
         <fieldset class="programms-form__fieldset programms-form__fieldset--contacts">
           <legend class="programms-form__fieldset-legend">Контактные данные (владельца кота)</legend>
-          <ul class="programms__list fields-list">
+          <ul class="programms__list fields-list programms-form__fields-list programms-form__fields-list--two-column-desktop">
             <li class="field">
               <label class="field__label" for="user-email">E-mail:*</label>
               <input class="field__input" type="email" name="contact__email" required id="user-email" placeholder="kuklachev@gmail.com">
@@ -83,15 +85,18 @@
               <label class="field__label" for="user-tel">Телефон:*</label>
               <input class="field__input" type="tel" name="contact__tel" required id="user-tel" placeholder="8 (960) 900-60-90">
             </li>
-            <li class="field">
-              <label class="field__label" for="about">Текст письма:</label>
-              <textarea placeholder="Расскажите обо всех повадках кота" class="field__input" id="about"></textarea>
-            </li>
           </ul>
+        </fieldset>
+        <fieldset class="programms-form__fieldset programms-form__fieldset--comment">
+          <legend class="programms-form__fieldset-legend">Комментарий</legend>
+          <div class="field">
+            <label class="field__label visually-hidden" for="about">Текст письма:</label>
+            <textarea placeholder="Расскажите обо всех повадках кота" class="field__input" id="about" rows="6"></textarea>
+          </div>
         </fieldset>
         <fieldset class="programms-form__fieldset programms-form__fieldset--add">
           <legend class="programms-form__fieldset-legend">Дополнительно</legend>
-          <ul class="programms__list fields-list">
+          <ul class="programms__list fields-list fields-list--add">
             <li>
               <label class="field-checkbox">
                 <input class="field-checkbox__input" type="checkbox" name="sugar" checked>
@@ -118,16 +123,19 @@
             </li>
           </ul>
         </fieldset>
-        <button type="submit" class="button programms__button">Отправить заявку</button>
+        <div class="programms-form__footer container">
+          <button type="submit" class="button programms__button">Отправить заявку</button>
+          <p class="programms__glose">*&nbsp;&mdash; Обязательные поля</p>
+        </div>
       </form>
-      <p class="programms__glose">*&nbsp;&mdash; Обязательные поля</p>
     </main>
     <footer class="page__footer footer">
       <div class="footer__contact">
         <!--КАК ДОБРАТЬСЯ-->
         <div class="footer__card">
-          <p class="footer__invitation">Приглашаем к сотрудничеству дилеров!</p>
-          <p class="footer__address">ул. Б. Конюшенная, д. 19/8 Санкт-Петербург</p>
+          <h2 class="footer__invitation">Приглашаем<br> к сотрудничеству<br> дилеров!</h2>
+          <span class="footer__address-street">ул. Большая<br> Конюшенная, д. 19/8</span>
+          <span class="footer__address-city">Санкт-Петербург</span>
         </div>
         <!--КАРТА-->
         <div class="footer__map">
@@ -135,24 +143,33 @@
         </div>
       </div>
       <!--В СОЦИАЛЬНЫХ СЕТЯХ-->
-      <div class="footer__bottom">
+      <div class="footer__bottom container">
         <a class="footer__logo">
-          <img src="https://via.placeholder.com/150x150" width="128" height="24" alt="Cat Energy">
+          <img src="img/logo-ce.svg" width="128" height="24" alt="Cat Energy">
         </a>
         <ul class="socials-list">
           <li class="socials-list__item">
             <a href="https://vk.com/" class="socials-list__link">
               <span class="visually-hidden">Cat energy вконтакте</span>
+              <svg width="23" height="16" fill="#666666">
+                <use xlink:href="img/sprite.svg#icon-vk"/>
+              </svg>
             </a>
           </li>
           <li class="socials-list__item">
             <a href="https://facebook.com" class="socials-list__link">
               <span class="visually-hidden">Cat energy на Facebook</span>
+              <svg width="16" height="16" fill="#666666">
+                <use xlink:href="img/sprite.svg#icon-insta"/>
+              </svg>
             </a>
           </li>
           <li class="socials-list__item">
             <a href="https://instagram.com" class="socials-list__link">
               <span class="visually-hidden">Cat energy в Instagram</span>
+              <svg width="22" height="22" fill="#666666">
+                <use xlink:href="img/sprite.svg#icon-fb"/>
+              </svg>
             </a>
           </li>
         </ul>
@@ -160,11 +177,11 @@
         <a href="https://htmlacademy.ru/" target="_blank" class="footer__developers">
           <span class="footer__developers-text">HTML Academy</span>
           <span class="footer__developers-image">
-            <img src="https://via.placeholder.com/150x150" width="27" height="34" alt="Логотип htmlacademy">
+            <img src="img/htmlacademy-gray.svg" width="27" height="34" alt="Логотип htmlacademy">
           </span>
         </a>
       </div>
     </footer>
-    <script src="js/form-min.js"></script>
+    <script src="js/script.min.js"></script>
   </body>
 </html>

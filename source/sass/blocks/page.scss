@@ -13,7 +13,17 @@
 }
 
 .page__header {
-  // Nothing
+  margin-bottom: 25px;
+
+  &--fixed-top {
+    margin-bottom: 0;
+
+    @media (min-width: $desktop-width) {
+      position: absolute;
+      top: 0;
+      width: 100%;
+    }
+  }
 }
 
 .page__main {

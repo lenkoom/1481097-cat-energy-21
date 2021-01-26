@@ -1,4 +1,6 @@
 .field {
+  display: flex;
+  align-items: center;
   list-style-type: none;
   text-transform: uppercase;
 }
@@ -9,6 +11,36 @@
   font-size: $main-form-font-size;
   color: $field-label-color;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
+}
+
+.field__label {
+  margin-right: 18px;
+}
+
+.field__input {
+  flex-grow: 1;
+  border: 1px solid $color-border-input;
+  padding: 13px 16px;
+
+  &::-webkit-input-placeholder {
+    color: $field-label-color;
+  }
+
+  &::-moz-placeholder {
+    color: $field-label-color;
+  }
+
+  &:-moz-placeholder {
+    color: $field-label-color;
+  }
+
+  &:-ms-input-placeholder {
+    color: $field-label-color;
+  }
 }
 
 .field__icon {

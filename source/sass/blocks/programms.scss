@@ -1,12 +1,30 @@
 .programms {
-  //Nothing
+  // Nothing
 }
 
 .programms__item {
   font-family: $heading-font;
+  line-height: 36px;
   font-size: $header-form-font-size;
   color: $color-black;
-  text-transform: uppercase;
+  font-weight: 400;
+  max-width: 1260px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: auto;
+  margin-bottom: 37px;
+
+  @media (min-width: $tablet-width) {
+    font-size: $header-form-tablet-font-size;
+    line-height: 60px;
+    padding-left: 70px;
+    margin-bottom: 54px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-area: header;
+    padding-left: 20px;
+  }
 }
 
 .programms__description {
@@ -14,6 +32,24 @@
   font-size: $main-form-font-size;
   color: $color-black;
   text-transform: uppercase;
+  line-height: 18px;
+  max-width: 1260px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: auto;
+  margin-bottom: 39px;
+
+  @media (min-width: $tablet-width) {
+    font-size: $form-title2-font-size;
+    line-height: 30px;
+    padding-left: 70px;
+    margin-bottom: 66px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-area: header;
+    padding-left: 20px;
+  }
 }
 
 .programms__form {
@@ -25,11 +61,17 @@
 }
 
 .programms__button {
-  //Nothing
+  padding: 15px 60px;
 }
 
 .programms__glose {
   font-family: $main-font;
   font-size: 14px;
   color: $color-black;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    text-align: left;
+  }
 }

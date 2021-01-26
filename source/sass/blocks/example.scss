@@ -1,24 +1,120 @@
 .example {
+  display: grid;
   background-color: $example-background-color;
   margin-bottom: 0;
+  grid-template-areas: "title" "text" "result" "expenses" "slider";
+  grid-template-columns: 1fr;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "title title" "text text" "result expenses" "slider slider" "slider slider";
+    background-color: unset;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: calc((100% - 1220px) / 2) 2fr repeat(2, 1fr) calc((100% - 1220px) / 2);
+    grid-template-areas: ". title slider slider ." ". text slider slider ." ". result slider slider ." ". expenses slider slider .";
+  }
+}
+
+.example::before {
+  background-color: #f2f2f2;
+  min-height: 462px;
+
+  @media (min-width: $tablet-width) {
+    content: "";
+    grid-column: 1 / -1;
+    grid-row: 5 / span 1;
+    width: calc(100% + 40px);
+    margin-left: -20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / -1;
+    grid-row: 2 / span 3;
+  }
+}
+
+.example::after {
+  background-color: #f2f2f2;
+
+  @media (min-width: $desktop-width) {
+    content: "";
+    grid-column: 5 / -1;
+    grid-row: 2 / span 3;
+  }
 }
 
 .example__title {
+  grid-area: title;
   font-family: $heading-font;
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
-  margin-left: 30px;
+  margin-top: 27px;
+  margin-bottom: 33px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-top: 43px;
+    margin-bottom: 63px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 15px;
+    margin-bottom: 76px;
+  }
 }
 
 .example__description {
+  grid-area: text;
   font-family: $main-font;
   font-weight: 500;
   font-size: $main-font-size;
   line-height: 18px;
   color: $color-special-dark-grey;
-  margin-left: 30px;
-  margin-right: 21px;
+  margin: 0;
+  margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 70px;
+    margin-bottom: 40px;
+    max-width: 436px;
+    align-self: start;
+  }
+}
+
+.example__list {
+  grid-area: result;
+  display: grid;
+  align-self: start;
+  grid-template-columns: repeat(auto-fill, minmax(124px, 1fr));
+  grid-gap: 33px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    grid-gap: 42px;
+  }
+
+  @media (min-width: $desktop-width) {
+    //Nothing
+  }
+}
+
+.example__property {
+  border: 1px solid #cdcdcd;
+  border-radius: 5px;
+  position: relative;
 }
 
 .example__property-value {
@@ -27,37 +123,92 @@
   font-size: 24px;
   line-height: 24px;
   text-transform: uppercase;
+  padding-top: 14px;
+  padding-bottom: 17px;
+  margin: 0;
   text-align: center;
-  padding: 5px;
-}
 
-.example__list {
-  display: grid;
-  margin-left: 30px;
-  grid-template-columns: 1fr 1fr;
-  margin-right: 21px;
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 30px;
+  }
 }
 
 .example__property-name {
-  text-align: center;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 18px;
+  right: 18px;
+  transform: translateY(50%);
   font-family: $main-font;
   font-weight: 500;
   font-size: 12px;
   line-height: 12px;
   color: $color-special-dark-grey;
-}
+  text-align: center;
+  background-color: #eaeaea;
 
-.example__property {
-  border-width: 1px;
-  border-color: $color-special-grey;
-  border-radius: 5px;
+  @media (min-width: $tablet-width) {
+    background-color: white;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: #f2f2f2;
+  }
 }
 
 .example__property-benefit {
+  grid-area: expenses;
+  align-self: start;
   font-family: $heading-font;
   font-weight: 500;
   font-size: $main-font-size;
   line-height: 20px;
   text-transform: uppercase;
   text-align: center;
+  margin-top: 34px;
+
+  @media (min-width: $tablet-width) {
+    text-align: right;
+    justify-self: end;
+    display: flex;
+    flex-direction: column;
+    max-width: 327px;
+    margin-top: 0;
+    padding-bottom: 64px;
+    font-size: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    justify-self: start;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+}
+
+.example__property-benefit-value {
+  display: inline-block;
+  margin-left: 3px;
+}
+
+.example__slider {
+  grid-area: slider;
+  align-self: end;
+  margin-top: 42px;
+  padding-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 59px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 0;
+  }
 }

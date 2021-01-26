@@ -1,17 +1,28 @@
 .socials-list {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   list-style-type: none;
-  margin: 10px;
+  margin: 0;
   border-bottom: 1px solid $socials-list-border-color;
   border-top: 1px solid $socials-list-border-color;
   padding: 20px 50px;
+
+  @media (min-width: $tablet-width) {
+    border-top: none;
+    border-bottom: none;
+  }
 }
 
 .socials-list__item {
-  //Nothing
+  & + .socials-list__item {
+    margin-left: 15px;
+  }
 }
 
 .socials-list__link {
-  //Nothing
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  height: 22px;
+  width: 22px;
 }

@@ -1,9 +1,49 @@
 .gift {
-  //Nothing
+  min-height: 289px;
+  padding: 58px 60px 43px 60px;
+  display: grid;
+  grid-gap: 48px;
+  justify-content: center;
+  align-items: center;
+  background-color: #68b738;
+  background-image: url("./../img/gift-photo-mobile.png");
+  background-size: cover;
+
+  @media (min-width: $tablet-width) {
+    min-height: 200px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 60px;
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 289px;
+    padding: 55px 42px 43px 42px;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 46px;
+  }
 }
 
 .gift__icon {
-  //Nothing
+  margin: 0;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+    padding-left: 78px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    text-align: center;
+  }
+}
+
+.gift__icon img {
+  vertical-align: middle;
 }
 
 .gift__description {
@@ -11,4 +51,17 @@
   font-size: $title-catalog-font-size;
   color: white;
   font-weight: 400;
+  margin: 0;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+    padding-left: 40px;
+    padding-right: 124px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    text-align: center;
+  }
 }
