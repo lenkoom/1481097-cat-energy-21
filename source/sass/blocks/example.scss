@@ -189,7 +189,8 @@
     justify-self: start;
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 10px;
+    margin-top: 50px;
+    margin-bottom: 0;
   }
 }
 
@@ -210,5 +211,6 @@
 
   @media (min-width: $desktop-width) {
     margin-top: 0;
+    margin-bottom: 40px;
   }
 }
