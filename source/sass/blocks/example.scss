@@ -64,7 +64,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 22px;
+    margin-top: 15px;
     margin-bottom: 76px;
   }
 }
@@ -105,6 +105,10 @@
   @media (min-width: $tablet-width) {
     grid-gap: 42px;
   }
+
+  @media (min-width: $desktop-width) {
+
+  }
 }
 
 .example__property {
@@ -127,6 +131,10 @@
   @media (min-width: $tablet-width) {
     font-size: 30px;
     line-height: 37px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 30px;
   }
 }
 
@@ -177,10 +185,11 @@
   }
 
   @media (min-width: $desktop-width) {
+    font-size: 20px;
     justify-self: start;
     flex-direction: row;
     justify-content: space-between;
-    padding-top: 20px;
+    margin-top: 10px;
   }
 }
 

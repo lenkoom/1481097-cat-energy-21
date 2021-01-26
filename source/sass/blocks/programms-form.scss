@@ -2,10 +2,16 @@
   display: grid;
   grid-template-areas: "user-info" "check-programm" "contacts" "comment" "add" "footer";
   grid-row-gap: 26px;
+  padding-bottom: 32px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 72px;
+  }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: calc((100% - 1220px) / 2) repeat(2, 1fr) calc((100% - 1220px) / 2);
     grid-template-areas: ". user-info check-programm ." "contacts contacts contacts contacts" "comment comment comment comment" "add add add add" "footer footer footer footer";
+    padding-bottom: 82px;
   }
 }
 
@@ -131,10 +137,22 @@
 
 .programms-form__footer {
   grid-area: footer;
+  display: grid;
+  justify-content: stretch;
+  align-items: center;
+  padding-top: 20px;
+
   @media (min-width: $tablet-width) {
-    display: flex;
-    align-items: baseline;
-    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 60px;
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column-gap: 80px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 

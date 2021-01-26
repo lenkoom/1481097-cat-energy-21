@@ -8,7 +8,6 @@
     grid-template-areas: "title icon" "text icon" "link link";
     grid-template-columns: auto 200px;
     grid-column-gap: 17px;
-
   }
 
   @media (min-width: $desktop-width) {
@@ -33,6 +32,17 @@
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
+  }
+
+  &--slim {
+    @media (min-width: $desktop-width) {
+      margin-left: 20px;
+    }
+  }
+  &--pro {
+    @media (min-width: $desktop-width) {
+      //Nothing
+    }
   }
 }
 
@@ -74,6 +84,18 @@
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
+  }
+
+  &--slim {
+    @media (min-width: $desktop-width) {
+      margin-left: 20px;
+    }
+  }
+
+  &--pro {
+    @media (min-width: $desktop-width) {
+      //Nothing
+    }
   }
 }
 

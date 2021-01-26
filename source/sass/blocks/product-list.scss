@@ -1,4 +1,4 @@
-.product-list {
+.products-list {
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 25px;
@@ -15,6 +15,7 @@
   }
 }
 
-.product-list__item {
-  //Nothing
+.products-list__item {
+  display: flex;
+  flex-direction: column;
 }

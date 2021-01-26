@@ -13,6 +13,11 @@
     @media (min-width: $tablet-width) {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
+      grid-column-gap: 60px;
+    }
+
+    @media (min-width: $desktop-width) {
+      grid-column-gap: 80px;
     }
   }
 }
