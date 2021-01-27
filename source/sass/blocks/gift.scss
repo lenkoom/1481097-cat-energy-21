@@ -9,7 +9,7 @@
   background-image: url("./../img/gift-photo-mobile.png");
   background-size: cover;
 
-  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  @media (min-resolution: 2dppx), (min-resolution: 192dpi) {
     background-image: url("./../img/gift-photo-mobile@2x.png");
   }
 
@@ -21,7 +21,7 @@
     padding: 0;
     background-image: url("./../img/gift-photo-tablet.png");
 
-    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    @media (min-resolution: 2dppx), (min-resolution: 192dpi) {
       background-image: url("./../img/gift-photo-tablet@2x.png");
     }
   }
@@ -35,7 +35,7 @@
     grid-gap: 46px;
     background-image: url("./../img/gift-photo-desktop.png");
 
-    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    @media (min-resolution: 2dppx), (min-resolution: 192dpi) {
       background-image: url("./../img/gift-photo-desktop@2x.png");
     }
   }
